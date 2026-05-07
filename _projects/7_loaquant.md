@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 로스트아크 경제 시계열 분석
-description: 재화 가격 변동 원인을 이벤트 단위로 분해 — 다음 충격 규모를 가늠하는 판단 기준 제공
+title: 인게임 경제 시계열 분석: 이벤트 충격 분해 (로스트아크)
+description: 재화 가격 시계열을 이벤트 단위로 분해하여 충격 패턴을 정량화 — 구조적 변동 요인 식별
 img: assets/img/proj_loaquant.png
 importance: 6
 category: 게임

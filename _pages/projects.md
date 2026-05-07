@@ -9,7 +9,6 @@ display_categories: [실무, 일반, 게임]
 horizontal: false
 ---
 
-<!-- pages/projects.md -->
 <div class="projects">
 
 <!-- Filter tabs -->
@@ -21,56 +20,40 @@ horizontal: false
 </div>
 
 {% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
   {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2" data-category="{{ category }}">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+    {% assign categorized_projects = site.projects | where: "category", category %}
+    {% assign sorted_projects = categorized_projects | sort: "importance" %}
+    {% assign proj_count = sorted_projects | size %}
+    {% if proj_count == 0 %}{% continue %}{% endif %}
+
+    <a id="{{ category }}" href=".#{{ category }}">
+      <h2 class="category">{{ category }}</h2>
+    </a>
+
+    {% if proj_count == 1 %}
+      {% assign col_class = "row-cols-1 row-cols-md-2" %}
+    {% elsif proj_count == 2 %}
+      {% assign col_class = "row-cols-1 row-cols-md-2" %}
+    {% else %}
+      {% assign col_class = "row-cols-1 row-cols-md-3" %}
+    {% endif %}
+
+    <div class="row {{ col_class }}" data-category="{{ category }}">
+      {% for project in sorted_projects %}
+        {% include projects.liquid %}
+      {% endfor %}
     </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3" data-category="{{ category }}">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
   {% endfor %}
 
 {% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
+  {% assign sorted_projects = site.projects | sort: "importance" %}
   <div class="row row-cols-1 row-cols-md-3">
     {% for project in sorted_projects %}
       {% include projects.liquid %}
     {% endfor %}
   </div>
-  {% endif %}
 {% endif %}
+
 </div>
 
 <script>
@@ -81,20 +64,17 @@ horizontal: false
       tabs.forEach(function (t) { t.classList.remove('active'); });
       tab.classList.add('active');
       var filter = tab.dataset.filter;
-      var categories = document.querySelectorAll('[data-category]');
-      var categoryHeadings = document.querySelectorAll('h2.category');
+      var categoryGroups = document.querySelectorAll('[data-category]');
+      var categoryAnchors = document.querySelectorAll('a[id]');
       if (filter === 'all') {
-        categories.forEach(function (c) { c.closest('.container, .row').style.display = ''; });
-        categoryHeadings.forEach(function (h) { h.parentElement.style.display = ''; });
+        categoryGroups.forEach(function (g) { g.style.display = ''; });
+        categoryAnchors.forEach(function (a) { a.style.display = ''; });
       } else {
-        categories.forEach(function (c) {
-          var show = c.dataset.category === filter;
-          c.style.display = show ? '' : 'none';
+        categoryGroups.forEach(function (g) {
+          g.style.display = g.dataset.category === filter ? '' : 'none';
         });
-        categoryHeadings.forEach(function (h) {
-          var anchor = h.parentElement;
-          var id = anchor.id;
-          anchor.style.display = id === filter ? '' : 'none';
+        categoryAnchors.forEach(function (a) {
+          a.style.display = a.id === filter ? '' : 'none';
         });
       }
     });

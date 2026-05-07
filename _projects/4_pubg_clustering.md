@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 배틀그라운드 유저 클러스터링
-description: 유저 6,759명을 행동 패턴 4개 세그먼트로 분류 — 세그먼트별 독립 KPI 설계로 A/B 실험 정밀도 개선
+title: 행동 패턴 기반 유저 세그먼테이션과 A/B 실험 설계 (PUBG)
+description: 6,759명을 4개 세그먼트로 분류 — 단일 KPI 실험의 한계를 실증하고 층화 무작위 배정 프레임워크 제안
 img: assets/img/proj_pubg.png
 importance: 3
 category: 게임

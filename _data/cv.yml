@@ -4,7 +4,11 @@ cv:
   email: icedo724@gmail.com
   location: 경기도 의왕시
   image: ""
-  summary: 데이터 기반 의사결정을 지향하는 분석가. Python·SQL·통계 검정을 도구로 직관에 의존하던 영역을 정량 기준으로 전환합니다.
+  summary: >
+    실무 인턴 포함 8개 프로젝트 경험 보유.
+    거래처 등급 재조정(카이제곱 검정), 게임 유저 클러스터링(생존 분석),
+    채용 시장 트렌드 분석(NLP·크롤링) 등 다양한 분석 방법론을
+    실데이터에 적용했습니다.
 
   social_networks:
     - network: GitHub
@@ -18,9 +22,9 @@ cv:
         end_date: "2024.10"
         location: 서울
         highlights:
-          - 거래처 데이터 보강 및 등급 재조정 — 카이제곱 검정 기반 정량 기준 전환
-          - 영업 CRM 데이터 정제·가공 파이프라인 구축
-          - 분석 결과 경영진 보고 자료 작성
+          - 거래처 활동·매출·결제 데이터 통합 및 정제 파이프라인 구축
+          - 카이제곱 검정 기반 등급 판별 변수 선정 및 정량 기준 수립
+          - 거래처 등급 재조정 결과를 CRM 시스템에 반영, 경영진 보고 자료 작성
 
     학력:
       - institution: 한국방송통신대학교
@@ -38,6 +42,8 @@ cv:
         studyType: 학사
         start_date: "2019.03"
         end_date: "2023.08"
+        highlights:
+          - "이수: 자료구조, 알고리즘, 데이터베이스, 운영체제, 컴퓨터 네트워크"
 
     교육:
       - institution: 프로그래머스 데이터 분석 데브코스
@@ -68,15 +74,18 @@ cv:
         date: "2020.01"
 
     기술:
-      - name: 언어
+      - name: 주력 언어
         keywords:
-          - Python · R · SQL
-      - name: 분석 도구
-        keywords:
-          - pandas · scikit-learn · statsmodels · matplotlib
-      - name: 시각화 / BI
-        keywords:
-          - Power BI · Tableau · Streamlit
+          - "Python — pandas, scikit-learn, statsmodels, matplotlib (전 프로젝트 적용)"
+          - "SQL — PostgreSQL, MySQL (실무 데이터 추출·가공)"
       - name: 분석 방법
         keywords:
-          - 통계 검정 · 시계열 분석 · 클러스터링 · 생존 분석 · A/B 테스트 · 회귀 모델
+          - "통계 검정 (카이제곱, t검정, Mann-Whitney)"
+          - "생존 분석 · 클러스터링 (K-Means, DBSCAN)"
+          - "시계열 분석 · 회귀 모델 · A/B 테스트 설계"
+      - name: 시각화 / BI
+        keywords:
+          - "Matplotlib / Seaborn · Streamlit · Tableau"
+      - name: 보조 도구
+        keywords:
+          - "R (통계 수업 수준) · Power BI (기초)"

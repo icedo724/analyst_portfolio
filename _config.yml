@@ -11,8 +11,7 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   데이터 분석가 조민서의 포트폴리오. 데이터 기반 의사결정을 지향합니다.
 footer_text: >
-  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> + <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  조민서 데이터 분석가 포트폴리오 · 2025
 keywords: 데이터분석가, portfolio, 조민서, data analyst
 lang: ko # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 📊 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)

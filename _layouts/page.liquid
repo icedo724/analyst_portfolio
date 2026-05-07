@@ -14,6 +14,16 @@ layout: default
     <p class="post-description">{{ page.description }}</p>
   </header>
 
+  {% if page.collection == 'projects' %}
+    {% if page.role or page.period or page.tags %}
+      <div class="project-meta-bar mb-3">
+        {% if page.role %}<span class="project-meta-badge"><i class="fa-solid fa-user-tie"></i> {{ page.role }}</span>{% endif %}
+        {% if page.period %}<span class="project-meta-badge"><i class="fa-regular fa-calendar"></i> {{ page.period }}</span>{% endif %}
+        {% for tag in page.tags %}<span class="project-meta-tag">{{ tag }}</span>{% endfor %}
+      </div>
+    {% endif %}
+  {% endif %}
+
   {% if page.img and page.collection == 'projects' %}
     <div class="project-hero mb-4">
       {%
