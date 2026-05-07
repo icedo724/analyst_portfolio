@@ -6,8 +6,7 @@ title: 조민서 # the website title (if blank, full name will be used instead)
 first_name: 민서
 middle_name:
 last_name: 조
-contact_note: >
-  메일이 가장 빠른 연락 수단입니다.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   데이터 분석가 조민서의 포트폴리오. 데이터 기반 의사결정을 지향합니다.
 footer_text: >
@@ -53,7 +52,7 @@ external_services:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true

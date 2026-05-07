@@ -4,7 +4,7 @@ title: 게임 패치 방향 예측 ML 모델 — Loracle (진행 중)
 description: API 수집 데이터로 분류·회귀 모델 v5 학습 — 패치 대상 분류 + 스탯 변화폭 회귀 파이프라인
 img: assets/img/proj_loracle.png
 importance: 8
-category: 게임
+category: 개인
 tags: [Python, 머신러닝, Riot API]
 related_publications: false
 ---

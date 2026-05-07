@@ -1,14 +1,8 @@
 cv:
   name: 조민서
-  label: 데이터 분석가
   email: icedo724@gmail.com
   location: 경기도 의왕시
   image: ""
-  summary: >
-    실무 인턴 포함 8개 프로젝트 경험 보유.
-    거래처 등급 재조정(카이제곱 검정), 게임 유저 클러스터링(생존 분석),
-    채용 시장 트렌드 분석(NLP·크롤링) 등 다양한 분석 방법론을
-    실데이터에 적용했습니다.
 
   social_networks:
     - network: GitHub
@@ -30,11 +24,9 @@ cv:
       - institution: 한국방송통신대학교
         location: 서울
         area: 통계·데이터과학과
-        studyType: 학사 재학
+        studyType: 학사 편입
         start_date: "2024.09"
         end_date: 재학 중
-        highlights:
-          - 통계학·데이터분석·머신러닝 이론 학습
 
       - institution: 숭실대학교 전산원
         location: 서울
@@ -69,23 +61,19 @@ cv:
         issuer: 한국산업인력공단
         date: "2021.08"
 
+      - name: 2종보통운전면허
+        issuer: 경찰청(운전면허시험관리단)
+        date: "2020.10"
+
       - name: 네트워크관리사 2급
         issuer: 한국정보통신자격협회
         date: "2020.01"
 
     기술:
-      - name: 주력 언어
+      - name: 언어
         keywords:
           - "Python — pandas, scikit-learn, statsmodels, matplotlib (전 프로젝트 적용)"
           - "SQL — PostgreSQL, MySQL (실무 데이터 추출·가공)"
-      - name: 분석 방법
-        keywords:
-          - "통계 검정 (카이제곱, t검정, Mann-Whitney)"
-          - "생존 분석 · 클러스터링 (K-Means, DBSCAN)"
-          - "시계열 분석 · 회귀 모델 · A/B 테스트 설계"
       - name: 시각화 / BI
         keywords:
-          - "Matplotlib / Seaborn · Streamlit · Tableau"
-      - name: 보조 도구
-        keywords:
-          - "R (통계 수업 수준) · Power BI (기초)"
+          - "Matplotlib / Seaborn · Tableau · Power BI"

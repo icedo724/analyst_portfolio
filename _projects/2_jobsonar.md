@@ -4,7 +4,7 @@ title: JobSonar — 데이터직군 채용공고 수집·조회 서비스
 description: 채용공고 자동 수집부터 직무·기술 스택 빈도 시각화까지 — 취업 시장 트렌드 한 페이지 집약
 img: assets/img/proj_jobsonar.svg
 importance: 7
-category: 일반
+category: 개인
 tags: [Python, Selenium, Streamlit, NLP]
 related_publications: false
 ---

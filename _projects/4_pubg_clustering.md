@@ -4,7 +4,7 @@ title: 행동 패턴 기반 유저 세그먼테이션과 A/B 실험 설계 (PUBG
 description: 6,759명을 4개 세그먼트로 분류 — 단일 KPI 실험의 한계를 실증하고 층화 무작위 배정 프레임워크 제안
 img: assets/img/proj_pubg.png
 importance: 3
-category: 게임
+category: 개인
 tags: [Python, 클러스터링, A/B 테스트]
 related_publications: false
 ---

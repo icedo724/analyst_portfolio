@@ -5,7 +5,7 @@ permalink: /projects/
 description: 실무·개인 프로젝트 모음
 nav: true
 nav_order: 2
-display_categories: [실무, 일반, 게임]
+display_categories: [실무, 개인]
 horizontal: false
 ---
 
@@ -15,8 +15,7 @@ horizontal: false
 <div class="project-filter-tabs mb-4">
   <button class="filter-tab active" data-filter="all">전체</button>
   <button class="filter-tab" data-filter="실무">실무</button>
-  <button class="filter-tab" data-filter="일반">일반</button>
-  <button class="filter-tab" data-filter="게임">게임</button>
+  <button class="filter-tab" data-filter="개인">개인</button>
 </div>
 
 {% if site.enable_project_categories and page.display_categories %}
@@ -30,9 +29,7 @@ horizontal: false
       <h2 class="category">{{ category }}</h2>
     </a>
 
-    {% if proj_count == 1 %}
-      {% assign col_class = "row-cols-1 row-cols-md-2" %}
-    {% elsif proj_count == 2 %}
+    {% if proj_count <= 2 %}
       {% assign col_class = "row-cols-1 row-cols-md-2" %}
     {% else %}
       {% assign col_class = "row-cols-1 row-cols-md-3" %}
