@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <rect width="400" height="250" fill="#f8f9fa"/>
+  <!-- Magnifying glass -->
+  <circle cx="155" cy="110" r="55" fill="none" stroke="#dee2e6" stroke-width="12"/>
+  <circle cx="155" cy="110" r="55" fill="none" stroke="#00369f" stroke-width="8" opacity="0.15"/>
+  <circle cx="155" cy="110" r="43" fill="white" stroke="#00369f" stroke-width="3"/>
+  <line x1="193" y1="148" x2="230" y2="185" stroke="#00369f" stroke-width="10" stroke-linecap="round"/>
+  <!-- Mini bar chart inside magnifier -->
+  <rect x="122" y="125" width="10" height="18" fill="#00369f" rx="1" opacity="0.8"/>
+  <rect x="136" y="112" width="10" height="31" fill="#00369f" rx="1"/>
+  <rect x="150" y="119" width="10" height="24" fill="#00369f" rx="1" opacity="0.8"/>
+  <rect x="164" y="105" width="10" height="38" fill="#00369f" rx="1"/>
+  <line x1="118" y1="143" x2="178" y2="143" stroke="#dee2e6" stroke-width="1"/>
+  <!-- Tech stack tags -->
+  <rect x="245" y="60" width="52" height="18" fill="#00369f" rx="9" opacity="0.1"/>
+  <text x="271" y="73" font-family="sans-serif" font-size="9" fill="#00369f" text-anchor="middle">Python</text>
+  <rect x="245" y="85" width="40" height="18" fill="#00369f" rx="9" opacity="0.1"/>
+  <text x="265" y="98" font-family="sans-serif" font-size="9" fill="#00369f" text-anchor="middle">SQL</text>
+  <rect x="245" y="110" width="64" height="18" fill="#00369f" rx="9" opacity="0.1"/>
+  <text x="277" y="123" font-family="sans-serif" font-size="9" fill="#00369f" text-anchor="middle">Streamlit</text>
+  <rect x="245" y="135" width="56" height="18" fill="#00369f" rx="9" opacity="0.1"/>
+  <text x="273" y="148" font-family="sans-serif" font-size="9" fill="#00369f" text-anchor="middle">Selenium</text>
+  <rect x="245" y="160" width="44" height="18" fill="#00369f" rx="9" opacity="0.1"/>
+  <text x="267" y="173" font-family="sans-serif" font-size="9" fill="#00369f" text-anchor="middle">Airflow</text>
+  <!-- Label -->
+  <text x="200" y="230" font-family="sans-serif" font-size="11" fill="#495057" text-anchor="middle">채용 시장 트렌드 분석</text>
+</svg>
