@@ -11,6 +11,17 @@ cv:
       username: icedo724
 
   sections:
+    경력:
+      - name: (주)메디케어소프트
+        position: 데이터 분석가 (인턴)
+        start_date: "2024.07"
+        end_date: "2024.10"
+        location: 서울
+        highlights:
+          - 거래처 데이터 보강 및 등급 재조정 — 카이제곱 검정 기반 정량 기준 전환
+          - 영업 CRM 데이터 정제·가공 파이프라인 구축
+          - 분석 결과 경영진 보고 자료 작성
+
     학력:
       - institution: 한국방송통신대학교
         location: 서울

@@ -247,6 +247,209 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// About page — skill badges, analysis cards, domain chips
+
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: var(--global-theme-color);
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+
+.analysis-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.analysis-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--global-divider-color);
+  background-color: var(--global-card-bg-color);
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+  }
+
+  .analysis-card-icon {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: var(--global-theme-color);
+    margin-top: 0.1rem;
+  }
+
+  .analysis-card-body {
+    .analysis-card-title {
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-bottom: 0.2rem;
+      color: var(--global-text-color);
+    }
+
+    .analysis-card-desc {
+      font-size: 0.85rem;
+      color: var(--global-text-color-light);
+      line-height: 1.5;
+    }
+  }
+}
+
+.domain-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.domain-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  border: 1px solid var(--global-theme-color);
+  color: var(--global-theme-color);
+  background-color: transparent;
+  font-weight: 500;
+}
+
+// Project detail — hero image and prev/next nav
+
+.project-hero {
+  border-radius: 8px;
+  overflow: hidden;
+  max-height: 380px;
+
+  .project-hero-img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 1.5rem;
+  gap: 1rem;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    max-width: 45%;
+    color: var(--global-text-color);
+
+    &:hover .project-nav-title {
+      color: var(--global-theme-color);
+    }
+  }
+
+  .project-nav-label {
+    font-size: 0.78rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.2rem;
+  }
+
+  .project-nav-title {
+    font-size: 0.92rem;
+    font-weight: 600;
+    transition: color 0.15s;
+  }
+
+  .project-nav-prev {
+    text-align: left;
+  }
+
+  .project-nav-next {
+    text-align: right;
+    margin-left: auto;
+
+    a {
+      align-items: flex-end;
+    }
+  }
+}
+
+// Projects page — filter tabs and card tags
+
+.project-filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-tab {
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--global-divider-color);
+  background: transparent;
+  color: var(--global-text-color-light);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+
+  &:hover,
+  &.active {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+    background-color: transparent;
+  }
+
+  &.active {
+    font-weight: 700;
+  }
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-tag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  background-color: var(--global-divider-color);
+  color: var(--global-text-color-light);
+  letter-spacing: 0.01em;
+}
+
 // Distill
 
 .distill {

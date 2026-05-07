@@ -5,6 +5,7 @@ description: 6패치 데이터로 분류·회귀 모델 v5 학습 — 데이터 
 img: assets/img/proj_loracle.png
 importance: 8
 category: 게임
+tags: [Python, 머신러닝, Riot API]
 related_publications: false
 ---
 
