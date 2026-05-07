@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 유저 이탈 예측: 클러스터링 + 생존 분석 파이프라인 (메이플스토리)
+title: "유저 이탈 예측: 클러스터링 + 생존 분석 파이프라인 (메이플스토리)"
 description: 활동·성장 패턴 군집화 후 Kaplan-Meier 생존 분석으로 세그먼트별 이탈 시점 차이를 통계 검증
 img: assets/img/proj_maple_cluster.svg
 importance: 4
