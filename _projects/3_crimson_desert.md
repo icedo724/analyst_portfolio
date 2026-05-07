@@ -30,6 +30,8 @@ related_publications: false
 
 Steam appreviews API로 전수 수집 후 패치 윈도우별로 집계, 95% 신뢰구간 산출.
 
+{% include figure.liquid loading="eager" path="assets/img/chart_crimson_sentiment.png" class="img-fluid rounded" caption="패치 윈도우별 긍정률 추이 (KR/EN, 95% CI)" %}
+
 | 패치 | KR 긍정률 | EN 긍정률 |
 |---|---|---|
 | 출시 (1.00.00) | 63.9% | 80.2% |
@@ -44,6 +46,8 @@ Steam appreviews API로 전수 수집 후 패치 윈도우별로 집계, 95% 신
 핵심 발견: 핫픽스 즉각 점프는 유의하지 않았고, **회복 추세가 안정 구간에 진입하는 시점**이 출시 후 4~5일임을 통계적으로 입증.
 
 ### 3단계 — 속성별 분해
+
+{% include figure.liquid loading="eager" path="assets/img/chart_crimson_aspect.png" class="img-fluid rounded" caption="속성별 긍정률 히트맵 (패치 × 속성)" %}
 
 키워드 매칭으로 5개 속성(조작/전투, 스토리/세계관, 그래픽, 성능/최적화, 가격/가성비)의 긍정률을 산출.
 

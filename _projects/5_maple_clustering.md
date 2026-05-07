@@ -56,6 +56,8 @@ related_publications: false
 
 ### 5단계 — 생존 분석 (Kaplan-Meier + Log-rank)
 
+{% include figure.liquid loading="eager" path="assets/img/chart_maple_survival.png" class="img-fluid rounded" caption="군집별 생존 곡선 — 신규_라이트는 101일 만에 50% 이탈" %}
+
 이탈 정의: 7일 연속 비활성.
 
 | 클러스터 | 중앙 생존일 | 이탈율 | 90일 생존율 |

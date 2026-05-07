@@ -33,6 +33,8 @@ related_publications: false
 | 평균 (7패치) | 0.409 | — |
 | 실전 기준 (16.7→16.8) | 0.356 | LightGBM |
 
+{% include figure.liquid loading="eager" path="assets/img/chart_loracle_fi.png" class="img-fluid rounded" caption="특성 중요도 Top 6 및 패치별 LOPO CV F1 비교" %}
+
 ### 향상도 (Lift)
 
 | 클래스 | 정밀도 | 기저율 | 향상도 |

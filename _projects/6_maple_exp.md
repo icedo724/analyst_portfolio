@@ -22,6 +22,8 @@ related_publications: false
 
 ### 분석 1 — 쇼케이스 영향 (대응표본 t-검정)
 
+{% include figure.liquid loading="eager" path="assets/img/chart_maple_showcase.png" class="img-fluid rounded" caption="쇼케이스 전후 레벨 구간별 평균 일일 경험치 변화" %}
+
 기준일(2025.12.13) ±35일 대칭 구간 설계. 동일 유저 전/후 평균 비교.
 
 | 레벨 구간 | 전 평균 | 후 평균 | 변화율 | p-value |

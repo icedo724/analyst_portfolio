@@ -32,6 +32,8 @@ related_publications: false
 
 ### 비정기적 요인 — 패치/이벤트 충격 분해
 
+{% include figure.liquid loading="eager" path="assets/img/chart_loaquant_timeseries.png" class="img-fluid rounded" caption="주요 강화 재료 가격 추이 — 이벤트 개입점 표시" %}
+
 Prophet 모형으로 "패치 없었을 경우" 예측값을 생성, 실제값과 비교해 순수 충격을 정량화.
 
 | 이벤트 | 핵심 재화 영향 |
