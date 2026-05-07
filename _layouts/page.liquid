@@ -62,7 +62,8 @@ layout: default
       {% endif %}
     {% endfor %}
     {% if curr_index and curr_index > 0 %}
-      {% assign prev_project = all_projects[curr_index | minus: 1] %}
+      {% assign prev_index = curr_index | minus: 1 %}
+      {% assign prev_project = all_projects[prev_index] %}
     {% endif %}
     {% assign next_index = curr_index | plus: 1 %}
     {% if next_index < proj_count %}
