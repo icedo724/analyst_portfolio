@@ -391,13 +391,13 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/analyst_portfolio/books/the_godfather/";
-            },},{id: "projects-거래처-데이터-보강-및-등급-재조정",
-          title: '거래처 데이터 보강 및 등급 재조정',
+            },},{id: "projects-거래처-등급-재조정",
+          title: '거래처 등급 재조정',
           description: "직관 기반 거래처 등급을 정량 기준으로 전환 — 영업 우선순위 재편의 데이터 근거 마련",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/1_medi/";
-            },},{id: "projects-jobsonar-데이터직군-채용공고-수집-조회-서비스",
-          title: 'JobSonar — 데이터직군 채용공고 수집·조회 서비스',
+            },},{id: "projects-jobsonar-채용공고-기술스택-빈도-분석",
+          title: 'JobSonar — 채용공고 기술스택 빈도 분석',
           description: "채용공고 자동 수집부터 직무·기술 스택 빈도 시각화까지 — 취업 시장 트렌드 한 페이지 집약",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/2_jobsonar/";
@@ -411,13 +411,13 @@ ninja.data = [{
           description: "6,759명을 4개 세그먼트로 분류 — 단일 KPI 실험의 한계를 실증하고 층화 무작위 배정 프레임워크 제안",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/4_pubg_clustering/";
-            },},{id: "projects-유저-이탈-예측-클러스터링-생존-분석-파이프라인-메이플스토리",
-          title: '유저 이탈 예측: 클러스터링 + 생존 분석 파이프라인 (메이플스토리)',
+            },},{id: "projects-메이플스토리-유저-행동-클러스터링",
+          title: '메이플스토리 유저 행동 클러스터링',
           description: "활동·성장 패턴 군집화 후 Kaplan-Meier 생존 분석으로 세그먼트별 이탈 시점 차이를 통계 검증",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/5_maple_clustering/";
-            },},{id: "projects-대규모-실데이터-기반-이벤트-효과-정량-측정-메이플스토리-96k",
-          title: '대규모 실데이터 기반 이벤트 효과 정량 측정 (메이플스토리 96k)',
+            },},{id: "projects-메이플스토리-고레벨-유저-경험치-분석",
+          title: '메이플스토리 고레벨 유저 경험치 분석',
           description: "285Lv 이상 유저 96,000명 데이터로 신규 지역·이벤트의 성장 지표 영향을 통계 검정으로 측정",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/6_maple_exp/";
