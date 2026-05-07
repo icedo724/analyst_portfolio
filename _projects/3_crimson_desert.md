@@ -2,7 +2,7 @@
 layout: page
 title: 붉은사막 Steam 리뷰 분석
 description: 출시 후 6주 만족도 추세를 외부 AAA 출시작 2종과 정량 비교 — 핫픽스 시점 효과를 시계열 회귀로 입증
-img: assets/img/proj_crimson.svg
+img: assets/img/proj_crimson.png
 importance: 2
 category: 게임
 related_publications: false

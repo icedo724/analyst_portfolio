@@ -2,7 +2,7 @@
 layout: page
 title: Loracle — 리그오브레전드 패치 예측 모델
 description: 6패치 데이터로 분류·회귀 모델 v5 학습 — 데이터 누적 시 패치 방향 예측 정확도 검증 예정
-img: assets/img/proj_loracle.svg
+img: assets/img/proj_loracle.png
 importance: 8
 category: 게임
 related_publications: false
