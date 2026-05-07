@@ -2,7 +2,7 @@
 layout: page
 title: 배틀그라운드 유저 클러스터링
 description: 유저 6,759명을 행동 패턴 4개 세그먼트로 분류 — 세그먼트별 독립 KPI 설계로 A/B 실험 정밀도 개선
-img: assets/img/7.jpg
+img: assets/img/proj_pubg.svg
 importance: 3
 category: 게임
 related_publications: false

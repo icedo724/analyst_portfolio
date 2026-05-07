@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <rect width="400" height="250" fill="#f8f9fa"/>
+  <!-- Grid -->
+  <line x1="55" y1="30" x2="55" y2="195" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="55" y1="195" x2="375" y2="195" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="55" y1="70" x2="375" y2="70" stroke="#dee2e6" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="55" y1="110" x2="375" y2="110" stroke="#dee2e6" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="55" y1="150" x2="375" y2="150" stroke="#dee2e6" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <!-- Comparison line A (gray - competitor) -->
+  <polyline points="65,160 100,145 135,130 170,120 205,115 240,118 275,125 310,130 345,135 375,138"
+    fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,3"/>
+  <!-- Main line (붉은사막 - blue) -->
+  <polyline points="65,170 100,155 135,120 170,90 205,75 240,85 270,65 290,72 310,80 345,90 375,95"
+    fill="none" stroke="#00369f" stroke-width="2.5"/>
+  <!-- Hotfix event marker -->
+  <line x1="270" y1="35" x2="270" y2="195" stroke="#e63946" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <rect x="250" y="35" width="58" height="16" fill="#e63946" rx="3" opacity="0.15"/>
+  <text x="279" y="46" font-family="sans-serif" font-size="8" fill="#e63946" text-anchor="middle">핫픽스</text>
+  <!-- Area fill under blue line -->
+  <polygon points="65,170 100,155 135,120 170,90 205,75 240,85 270,65 290,72 310,80 345,90 375,95 375,195 65,195"
+    fill="#00369f" opacity="0.05"/>
+  <!-- Legend -->
+  <line x1="65" y1="218" x2="90" y2="218" stroke="#00369f" stroke-width="2.5"/>
+  <text x="95" y="222" font-family="sans-serif" font-size="9" fill="#495057">붉은사막</text>
+  <line x1="170" y1="218" x2="195" y2="218" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="200" y="222" font-family="sans-serif" font-size="9" fill="#495057">비교 타이틀</text>
+</svg>

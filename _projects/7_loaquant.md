@@ -2,7 +2,7 @@
 layout: page
 title: 로스트아크 경제 시계열 분석
 description: 재화 가격 변동 원인을 이벤트 단위로 분해 — 다음 충격 규모를 가늠하는 판단 기준 제공
-img: assets/img/4.jpg
+img: assets/img/proj_loaquant.svg
 importance: 6
 category: 게임
 related_publications: false

@@ -40,32 +40,32 @@ cv:
           - 팀 프로젝트 다수 수행
 
     자격:
-      - institution: 한국데이터산업진흥원
-        area: 국가공인 SQL개발자(SQLD)
-        end_date: "2026.03"
+      - name: 국가공인 SQL개발자 (SQLD)
+        issuer: 한국데이터산업진흥원
+        date: "2026.03"
 
-      - institution: 한국데이터산업진흥원
-        area: 빅데이터분석기사
-        end_date: "2025.12"
+      - name: 빅데이터분석기사
+        issuer: 한국데이터산업진흥원
+        date: "2025.12"
 
-      - institution: 한국산업인력공단
-        area: 정보처리산업기사
-        end_date: "2021.08"
+      - name: 정보처리산업기사
+        issuer: 한국산업인력공단
+        date: "2021.08"
 
-      - institution: 한국정보통신자격협회
-        area: 네트워크관리사 2급
-        end_date: "2020.01"
+      - name: 네트워크관리사 2급
+        issuer: 한국정보통신자격협회
+        date: "2020.01"
 
     기술:
-      - title: 언어
-        items:
+      - name: 언어
+        keywords:
           - Python · R · SQL
-      - title: 분석 도구
-        items:
+      - name: 분석 도구
+        keywords:
           - pandas · scikit-learn · statsmodels · matplotlib
-      - title: 시각화 / BI
-        items:
+      - name: 시각화 / BI
+        keywords:
           - Power BI · Tableau · Streamlit
-      - title: 분석 방법
-        items:
+      - name: 분석 방법
+        keywords:
           - 통계 검정 · 시계열 분석 · 클러스터링 · 생존 분석 · A/B 테스트 · 회귀 모델
