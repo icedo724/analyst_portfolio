@@ -7,6 +7,16 @@ importance: 6
 category: 개인
 tags: [Python, 시계열, 인과추론, API]
 related_publications: false
+links:
+  - text: GitHub
+    url: "https://github.com/icedo724/LoaQuant"
+    icon: "fab fa-github"
+  - text: 리포트
+    url: "https://www.notion.so/miniminimin/318fbcdaed2880cd8de8dd88406d3564"
+    icon: "fa-solid fa-file-lines"
+  - text: 대시보드
+    url: "https://loaquant.streamlit.app/"
+    icon: "fa-solid fa-chart-bar"
 ---
 
 ## 배경 및 문제 정의
@@ -54,4 +64,3 @@ Prophet 모형으로 "패치 없었을 경우" 예측값을 생성, 실제값과
 - 가상 경제는 단기적으로 **유저 심리**에 요동치지만, 장기적으로 **실제 공급량**이 시세를 통제
 - 이 구조를 수치로 보여주는 것이 이상 거래 탐지·BM 시뮬레이션의 기반
 
-**결과물**: [GitHub](https://github.com/icedo724/LoaQuant) · [리포트](https://www.notion.so/miniminimin/318fbcdaed2880cd8de8dd88406d3564) · [대시보드](https://loaquant.streamlit.app/)

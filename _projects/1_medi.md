@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 거래처 데이터 보강 및 등급 재조정
+title: 거래처 등급 재조정
 description: 직관 기반 거래처 등급을 정량 기준으로 전환 — 영업 우선순위 재편의 데이터 근거 마련
 img: assets/img/proj_medi.svg
 importance: 1
@@ -9,6 +9,13 @@ tags: [Python, SQL, 통계 검정, 카이제곱]
 period: "2024.07 – 2024.10"
 role: 데이터 분석가 (인턴)
 related_publications: false
+links:
+  - text: GitHub
+    url: "https://github.com/icedo724/medi"
+    icon: "fab fa-github"
+  - text: 리포트
+    url: "https://www.notion.so/miniminimin/2e0fbcdaed2880f1a37fe87f58603c1a"
+    icon: "fa-solid fa-file-lines"
 ---
 
 ## 배경 및 문제 정의
@@ -116,4 +123,3 @@ def assign_grade(row):
 
 **한계**: 매출 기반 지표만으로는 "성장 가능성 있는 신규 거래처"를 높게 평가하기 어렵다. 장기적으로는 거래처 생애 단계(신규/성장/성숙/이탈)를 추가 변수로 고려해야 한다.
 
-**결과물**: [GitHub](https://github.com/icedo724/medi) · [분석 리포트](https://www.notion.so/miniminimin/2e0fbcdaed2880f1a37fe87f58603c1a?source=copy_link)

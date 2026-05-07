@@ -1,12 +1,22 @@
 ---
 layout: page
-title: "유저 이탈 예측: 클러스터링 + 생존 분석 파이프라인 (메이플스토리)"
+title: 메이플스토리 유저 행동 클러스터링
 description: 활동·성장 패턴 군집화 후 Kaplan-Meier 생존 분석으로 세그먼트별 이탈 시점 차이를 통계 검증
 img: assets/img/proj_maple_cluster.svg
 importance: 4
 category: 개인
 tags: [Python, 클러스터링, 생존 분석]
 related_publications: false
+links:
+  - text: GitHub
+    url: "https://github.com/icedo724/Maplestory_Analysis"
+    icon: "fab fa-github"
+  - text: 리포트
+    url: "https://www.notion.so/miniminimin/346fbcdaed2880209e39ff1b490e34e5"
+    icon: "fa-solid fa-file-lines"
+  - text: 대시보드
+    url: "https://maple-user-clustering.streamlit.app/"
+    icon: "fa-solid fa-chart-bar"
 ---
 
 ## 배경 및 문제 정의
@@ -74,4 +84,3 @@ related_publications: false
 - 이탈 방지 리소스: C1(진입 장벽 완화·챌린저스 만료 시점 개입) 우선
 - 콘텐츠 심화: C0·C2(성장 목표 제공·소셜 기능 강화)
 
-**결과물**: [GitHub](https://github.com/icedo724/Maplestory_Analysis) · [리포트](https://www.notion.so/miniminimin/346fbcdaed2880209e39ff1b490e34e5) · [대시보드](https://maple-user-clustering.streamlit.app/)

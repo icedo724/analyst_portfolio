@@ -7,6 +7,13 @@ importance: 2
 category: 개인
 tags: [Python, NLP, 시계열, 회귀 분석]
 related_publications: false
+links:
+  - text: GitHub
+    url: "https://github.com/icedo724/crimson_desert_review"
+    icon: "fab fa-github"
+  - text: 리포트
+    url: "https://www.notion.so/miniminimin/358fbcdaed28804e92f6c73ecc6fa899"
+    icon: "fa-solid fa-file-lines"
 ---
 
 출시 후 6주간 Steam 리뷰 **71,000건(본 IP) + 376,000건(벤치마크)** 전수 분석.
@@ -70,4 +77,3 @@ Steam appreviews API로 전수 수집 후 패치 윈도우별로 집계, 95% 신
 
 대규모 텍스트 데이터를 직접 수집·전처리하고 단일 지표(만족도)를 다층으로 분해한 경험. 속성 분류 정확도(커버리지 64.4%)와 다중 검정 보정 미적용이 남은 한계다.
 
-**결과물**: [GitHub](https://github.com/icedo724/crimson_desert_review) · [리포트](https://www.notion.so/miniminimin/358fbcdaed28804e92f6c73ecc6fa899)

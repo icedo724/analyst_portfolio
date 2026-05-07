@@ -395,6 +395,40 @@ ul.task-list input[type="checkbox"] {
   color: var(--global-theme-color);
 }
 
+// Project detail — link buttons (GitHub / 리포트 / 대시보드)
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid var(--global-divider-color);
+  color: var(--global-text-color);
+  background-color: var(--global-card-bg-color);
+  transition: border-color 0.15s, color 0.15s;
+
+  i {
+    font-size: 0.78rem;
+    color: var(--global-theme-color);
+  }
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
 // Project detail — hero image and prev/next nav
 
 .project-hero {
