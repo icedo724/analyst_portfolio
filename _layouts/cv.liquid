@@ -69,6 +69,9 @@ layout: default
             {% if cv.email %}
               <div style="font-size: 0.9rem; color: var(--global-text-color-light);">{{ cv.email }}</div>
             {% endif %}
+            {% if cv.phone_number %}
+              <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-top: 0.1rem;">{{ cv.phone_number }}</div>
+            {% endif %}
             {% if cv.location %}
               <div style="font-size: 0.85rem; color: var(--global-text-color-light); margin-top: 0.1rem;">{{ cv.location }}</div>
             {% endif %}

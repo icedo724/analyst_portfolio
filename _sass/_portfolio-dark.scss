@@ -652,35 +652,55 @@ footer.fixed-bottom {
 
 // ── Print / PDF export ────────────────────────────────────────────────────────
 @media print {
-  // Page setup
   @page {
     size: A4;
-    margin: 14mm 12mm;
+    margin: 16mm 14mm;
   }
 
-  // Reset dark theme to white-on-dark for print
+  // Tell browser to honour our colour choices (don't strip backgrounds)
+  html {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  // ① Reset ALL CSS variables first so var() references resolve correctly
   :root,
   html[data-theme="light"],
   html[data-theme="dark"] {
-    --pf-bg:      #ffffff;
-    --pf-surface: #f8f8f8;
-    --pf-text:    #111111;
-    --pf-muted:   #444444;
-    --pf-accent:  #4f46e5;
-    --pf-border-solid: #dddddd;
-    --pf-border:  rgba(0,0,0,0.12);
-    --pf-accent-bg:  rgba(79,70,229,0.07);
-    --pf-accent-bdr: rgba(79,70,229,0.25);
+    --pf-bg:             #ffffff;
+    --pf-surface:        #f5f5f7;
+    --pf-text:           #111111;
+    --pf-muted:          #444444;
+    --pf-accent:         #4338ca;
+    --pf-accent-h:       #6366f1;
+    --pf-accent-bg:      #eef2ff;
+    --pf-accent-bdr:     #c7d2fe;
+    --pf-border:         rgba(0,0,0,0.1);
+    --pf-border-solid:   #d1d5db;
+    --pf-footer-bg:      #ffffff;
+    --global-bg-color:          #ffffff;
+    --global-text-color:        #111111;
+    --global-text-color-light:  #555555;
+    --global-theme-color:       #4338ca;
+    --global-card-bg-color:     #f5f5f7;
+    color-scheme: light;
   }
 
-  body {
-    background: #fff !important;
-    color: #111 !important;
+  // ② Base reset
+  body, html {
+    background-color: #ffffff !important;
+    color: #111111 !important;
     font-size: 9.5pt !important;
     font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif !important;
+    -webkit-font-smoothing: auto !important;
   }
 
-  // Hide chrome elements
+  // ③ Force ALL text elements dark (catches any residual var(--pf-text) = light)
+  p, li, span, div, td, th, h1, h2, h3, h4, h5, h6, label, small, strong, em {
+    color: #111111 !important;
+  }
+
+  // ④ Hide navigation & chrome
   .navbar,
   footer,
   footer.sticky-bottom,
@@ -693,85 +713,100 @@ footer.fixed-bottom {
     display: none !important;
   }
 
-  // Remove link colors but keep text readable
+  // ⑤ Links
   a {
-    color: #4f46e5 !important;
+    color: #4338ca !important;
     text-decoration: none !important;
   }
 
-  // Cards
+  // ⑥ Cards
   .card {
-    background-color: #f9f9f9 !important;
-    border: 1px solid #ddd !important;
+    background-color: #f5f5f7 !important;
+    border: 1px solid #d1d5db !important;
     box-shadow: none !important;
-    break-inside: avoid;
     transform: none !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .card-title {
-    color: #111 !important;
+    color: #111111 !important;
     font-size: 9.5pt !important;
+    font-weight: 600 !important;
   }
 
   .card-text {
-    color: #444 !important;
+    color: #444444 !important;
     font-size: 8.5pt !important;
+    line-height: 1.55 !important;
   }
 
-  // Tags
+  // ⑦ Tags
   .pf-tag {
-    background-color: #f0f0ff !important;
-    color: #4f46e5 !important;
+    background-color: #eef2ff !important;
+    color: #4338ca !important;
     border-color: #c7d2fe !important;
     font-size: 7pt !important;
   }
 
-  // Project link buttons
-  .project-links {
-    margin-top: 0.3rem !important;
-  }
-
+  // ⑧ Project link buttons
   .project-link-btn {
-    color: #555 !important;
-    border-color: #ccc !important;
+    color: #555555 !important;
+    border-color: #d1d5db !important;
     font-size: 7.5pt !important;
+    background-color: transparent !important;
 
-    i { color: #4f46e5 !important; }
+    i { color: #4338ca !important; }
   }
 
-  // WIP badge
+  // ⑨ WIP badge
   .pf-badge-wip {
-    background-color: #fff8e1 !important;
-    color: #b45309 !important;
+    background-color: #fefce8 !important;
+    color: #92400e !important;
     border-color: #fde68a !important;
   }
 
-  // Category headers
+  // ⑩ Category headers
   h2.category {
-    color: #333 !important;
-    border-color: #ccc !important;
+    color: #222222 !important;
+    border-color: #d1d5db !important;
     font-size: 10pt !important;
-    margin-top: 1rem !important;
+    margin-top: 0.8rem !important;
   }
 
-  // 2-col grid for print
+  // ⑪ 2-col grid for project cards
   .row-cols-md-2 {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 0.6rem !important;
+    gap: 0.55rem !important;
   }
 
   .row-cols-md-2 > .col {
     width: 100% !important;
     padding: 0 !important;
+    margin: 0 !important;
   }
 
-  // Page title
+  // ⑫ Page / post title
   .page-header h1,
   h1.post-title {
-    color: #111 !important;
-    font-size: 16pt !important;
+    color: #111111 !important;
+    font-size: 15pt !important;
   }
+
+  // ⑬ Bootstrap container / content area
+  .container,
+  .container-fluid,
+  .container-xl {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .post {
+    padding-top: 0 !important;
+  }
+
+  .mt-5 { margin-top: 0 !important; }
 }
 
 // ── Numbered Approach (v2) ────────────────────────────────────────────────────
