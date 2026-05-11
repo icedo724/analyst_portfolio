@@ -434,7 +434,7 @@ h2.category {
 .project-filter-tabs {
   display: flex;
   gap: 0.42rem;
-  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .filter-tab {
@@ -512,11 +512,23 @@ h2.category {
 }
 
 .project-link-btn {
-  border-color: var(--pf-border-solid) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.3rem !important;
+  padding: 0.2rem 0.68rem !important;
+  border-radius: 5px !important;
+  border: 1px solid var(--pf-border-solid) !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
   color: var(--pf-muted) !important;
   background-color: transparent !important;
+  text-decoration: none !important;
+  transition: all 0.14s !important;
 
-  i { color: var(--pf-accent) !important; }
+  i {
+    color: var(--pf-accent) !important;
+    font-size: 0.76rem;
+  }
 
   &:hover {
     border-color: var(--pf-accent) !important;
