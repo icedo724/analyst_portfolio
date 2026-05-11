@@ -1,0 +1,584 @@
+/*******************************************************************************
+ * Portfolio Dark Theme
+ * cvless와 비슷한 다크 포트폴리오이지만 다른 디자인:
+ *   - 배경: slate-950 (#0F172A), cvless는 순수 검정
+ *   - 액센트: indigo-400 (#818CF8), cvless는 particles cyan
+ *   - 배경 효과: CSS dot grid, cvless는 particles.js 네트워크
+ *   - 히어로: 중앙 정렬 텍스트, cvless는 사이드 프로필 사진
+ ******************************************************************************/
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+// ── Design Tokens ─────────────────────────────────────────────────────────────
+:root,
+html[data-theme="light"] {
+  --pf-bg:           #0F172A;
+  --pf-surface:      #1E293B;
+  --pf-border:       rgba(255, 255, 255, 0.07);
+  --pf-border-solid: #334155;
+  --pf-text:         #E2E8F0;
+  --pf-muted:        #94A3B8;
+  --pf-accent:       #818CF8;
+  --pf-accent-h:     #A5B4FC;
+  --pf-accent-bg:    rgba(129, 140, 248, 0.10);
+  --pf-accent-bdr:   rgba(129, 140, 248, 0.28);
+  --pf-footer-bg:    #080F1E;
+
+  // al-folio global vars 오버라이드 (강제 다크)
+  --global-bg-color:          #0F172A;
+  --global-code-bg-color:     #1E293B;
+  --global-text-color:        #E2E8F0;
+  --global-text-color-light:  #94A3B8;
+  --global-theme-color:       #818CF8;
+  --global-hover-color:       #818CF8;
+  --global-hover-text-color:  #0F172A;
+  --global-footer-bg-color:   #080F1E;
+  --global-footer-text-color: #64748B;
+  --global-footer-link-color: #94A3B8;
+  --global-divider-color:     rgba(255,255,255,0.07);
+  --global-card-bg-color:     #1E293B;
+  color-scheme: dark;
+}
+
+html[data-theme="dark"] {
+  --pf-bg:           #0F172A;
+  --pf-surface:      #1E293B;
+  --pf-border:       rgba(255, 255, 255, 0.07);
+  --pf-border-solid: #334155;
+  --pf-text:         #E2E8F0;
+  --pf-muted:        #94A3B8;
+  --pf-accent:       #818CF8;
+  --pf-accent-h:     #A5B4FC;
+  --pf-accent-bg:    rgba(129, 140, 248, 0.10);
+  --pf-accent-bdr:   rgba(129, 140, 248, 0.28);
+  --pf-footer-bg:    #080F1E;
+}
+
+// ── Base ──────────────────────────────────────────────────────────────────────
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui,
+    'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif !important;
+  background-color: var(--pf-bg) !important;
+  color: var(--pf-text) !important;
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+}
+
+a {
+  color: var(--pf-accent) !important;
+  text-decoration: none !important;
+  transition: color 0.15s !important;
+
+  &:hover {
+    color: var(--pf-accent-h) !important;
+    text-decoration: none !important;
+  }
+}
+
+hr {
+  border-color: var(--pf-border-solid) !important;
+  opacity: 1 !important;
+}
+
+p, li {
+  line-height: 1.8;
+  color: var(--pf-muted);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--pf-text) !important;
+}
+
+// ── Navbar ────────────────────────────────────────────────────────────────────
+.navbar {
+  background-color: rgba(15, 23, 42, 0.88) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid var(--pf-border) !important;
+  box-shadow: none !important;
+  padding-top: 0.55rem !important;
+  padding-bottom: 0.55rem !important;
+
+  .navbar-brand {
+    font-size: 0.92rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+    color: var(--pf-text) !important;
+
+    &:hover { color: var(--pf-accent) !important; }
+  }
+
+  .nav-item .nav-link {
+    font-size: 0.82rem !important;
+    font-weight: 500 !important;
+    color: var(--pf-muted) !important;
+    padding: 0.28rem 0.65rem !important;
+    border-radius: 5px !important;
+    transition: color 0.14s, background-color 0.14s !important;
+
+    &:hover {
+      color: var(--pf-text) !important;
+      background-color: rgba(255, 255, 255, 0.05) !important;
+    }
+  }
+
+  .nav-item.active .nav-link {
+    color: var(--pf-accent) !important;
+    font-weight: 600 !important;
+    background-color: var(--pf-accent-bg) !important;
+  }
+
+  .icon-bar {
+    background-color: var(--pf-muted) !important;
+  }
+}
+
+#light-toggle,
+#search-toggle {
+  color: var(--pf-muted) !important;
+  &:hover { color: var(--pf-accent) !important; }
+}
+
+// ── Hero Section ──────────────────────────────────────────────────────────────
+.pf-hero {
+  min-height: calc(100vh - 57px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 1.5rem 5rem;
+  background-color: var(--pf-bg);
+
+  // Dot grid (different from cvless particles.js)
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+      circle,
+      rgba(129, 140, 248, 0.2) 1px,
+      transparent 1px
+    );
+    background-size: 38px 38px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  // Radial vignette
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse 85% 65% at 50% 45%,
+      transparent 30%,
+      #0F172A 82%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+.pf-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  width: 100%;
+}
+
+.pf-hero__eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--pf-accent);
+  margin-bottom: 1rem;
+  opacity: 0.85;
+}
+
+.pf-hero__name {
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.0;
+  color: var(--pf-text) !important;
+  margin-bottom: 1.3rem;
+}
+
+.pf-hero__tagline {
+  font-size: clamp(1rem, 2.6vw, 1.2rem);
+  line-height: 1.8;
+  color: var(--pf-muted);
+  margin-bottom: 2.5rem;
+  word-break: keep-all;
+}
+
+.pf-hero__cta {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+// ── Buttons ───────────────────────────────────────────────────────────────────
+.pf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  padding: 0.56rem 1.35rem;
+  border-radius: 7px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1.5px solid transparent;
+  transition: all 0.14s;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+
+  &--primary {
+    background-color: var(--pf-accent) !important;
+    color: #0F172A !important;
+    border-color: var(--pf-accent) !important;
+
+    &:hover {
+      background-color: var(--pf-accent-h) !important;
+      border-color: var(--pf-accent-h) !important;
+      color: #0F172A !important;
+      transform: translateY(-1px);
+    }
+  }
+
+  &--ghost {
+    background-color: transparent !important;
+    color: var(--pf-muted) !important;
+    border-color: var(--pf-border-solid) !important;
+
+    &:hover {
+      color: var(--pf-text) !important;
+      border-color: rgba(255,255,255,0.35) !important;
+      transform: translateY(-1px);
+    }
+  }
+}
+
+// ── Scroll Indicator ──────────────────────────────────────────────────────────
+.pf-scroll-indicator {
+  position: absolute;
+  bottom: 2.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--pf-muted);
+  opacity: 0.35;
+
+  svg {
+    animation: pf-bounce 2.2s ease-in-out infinite;
+  }
+}
+
+@keyframes pf-bounce {
+  0%, 100% { transform: translateY(0); opacity: 0.35; }
+  50%       { transform: translateY(6px); opacity: 0.7; }
+}
+
+// ── Content Wrapper (below hero) ─────────────────────────────────────────────
+.pf-content-wrapper {
+  background-color: var(--pf-bg);
+}
+
+.pf-content {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 6rem;
+}
+
+// ── Section Label ─────────────────────────────────────────────────────────────
+.pf-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--pf-accent);
+  opacity: 0.8;
+  margin-bottom: 1.4rem;
+}
+
+// ── Approach List ─────────────────────────────────────────────────────────────
+.pf-approach {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem 0;
+  border-top: 1px solid var(--pf-border);
+
+  li {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--pf-border);
+    margin: 0;
+    color: inherit;
+    line-height: inherit;
+  }
+}
+
+.pf-approach__title {
+  display: block;
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: var(--pf-text);
+  margin-bottom: 0.3rem;
+}
+
+.pf-approach__desc {
+  font-size: 0.87rem;
+  color: var(--pf-muted);
+  line-height: 1.75;
+}
+
+// ── Tags ──────────────────────────────────────────────────────────────────────
+.pf-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.pf-tag,
+.skill-badge,
+.skills-section .skill-badge {
+  display: inline-block;
+  background-color: var(--pf-accent-bg) !important;
+  color: var(--pf-accent) !important;
+  border: 1px solid var(--pf-accent-bdr) !important;
+  padding: 0.22rem 0.72rem;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+// ── Project Cards ─────────────────────────────────────────────────────────────
+.card {
+  background-color: var(--pf-surface) !important;
+  border: 1px solid var(--pf-border-solid) !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+  transition: border-color 0.14s, transform 0.14s, box-shadow 0.14s !important;
+
+  &:hover {
+    border-color: var(--pf-accent) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35) !important;
+  }
+}
+
+.card-img-top {
+  border-bottom: 1px solid var(--pf-border-solid) !important;
+}
+
+.card-title {
+  color: var(--pf-text) !important;
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+}
+
+.card-text {
+  color: var(--pf-muted) !important;
+  font-size: 0.81rem !important;
+  line-height: 1.65 !important;
+}
+
+a.card,
+a.card:hover {
+  color: var(--pf-text) !important;
+}
+
+// Category header on projects page
+h2.category {
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: var(--pf-muted) !important;
+  border-bottom: 1px solid var(--pf-border-solid) !important;
+  padding-bottom: 0.6rem !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+// Filter Tabs
+.project-filter-tabs {
+  display: flex;
+  gap: 0.42rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-tab {
+  padding: 0.28rem 0.88rem;
+  border-radius: 20px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid var(--pf-border-solid);
+  background: transparent;
+  color: var(--pf-muted);
+  transition: all 0.14s;
+
+  &:hover,
+  &.active {
+    border-color: var(--pf-accent);
+    color: var(--pf-accent);
+    background-color: var(--pf-accent-bg);
+  }
+}
+
+// ── Badges ────────────────────────────────────────────────────────────────────
+.badge {
+  background-color: var(--pf-accent-bg) !important;
+  color: var(--pf-accent) !important;
+  border: 1px solid var(--pf-accent-bdr) !important;
+  font-size: 0.7rem !important;
+  font-weight: 500 !important;
+  padding: 0.2rem 0.5rem !important;
+}
+
+// ── Project Detail Page ───────────────────────────────────────────────────────
+.post-header h1,
+.post-title {
+  font-size: 1.55rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+  color: var(--pf-text) !important;
+  line-height: 1.25 !important;
+}
+
+.post-description {
+  color: var(--pf-muted) !important;
+  font-size: 0.92rem !important;
+}
+
+.project-meta-tag,
+.post-meta-tag {
+  background-color: var(--pf-accent-bg) !important;
+  color: var(--pf-accent) !important;
+  border: 1px solid var(--pf-accent-bdr) !important;
+}
+
+// Project link pill buttons
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+  margin-bottom: 1.2rem;
+}
+
+.project-link-btn {
+  border-color: var(--pf-border-solid) !important;
+  color: var(--pf-muted) !important;
+  background-color: transparent !important;
+
+  i { color: var(--pf-accent) !important; }
+
+  &:hover {
+    border-color: var(--pf-accent) !important;
+    color: var(--pf-accent) !important;
+    background-color: var(--pf-accent-bg) !important;
+  }
+}
+
+// ── Tables ────────────────────────────────────────────────────────────────────
+table {
+  border-color: var(--pf-border-solid) !important;
+  font-size: 0.88rem;
+
+  th {
+    background-color: var(--pf-surface) !important;
+    color: var(--pf-text) !important;
+    border-color: var(--pf-border-solid) !important;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+  }
+
+  td {
+    color: var(--pf-muted) !important;
+    border-color: var(--pf-border-solid) !important;
+  }
+
+  tbody tr:hover td {
+    background-color: rgba(129, 140, 248, 0.04) !important;
+  }
+}
+
+// ── Blockquote ────────────────────────────────────────────────────────────────
+blockquote {
+  border-left: 3px solid var(--pf-accent) !important;
+  background-color: var(--pf-accent-bg) !important;
+  color: var(--pf-muted) !important;
+  padding: 0.85rem 1.2rem !important;
+  border-radius: 0 6px 6px 0 !important;
+  margin: 1.2rem 0 !important;
+
+  p { color: var(--pf-muted) !important; margin: 0; }
+}
+
+// ── Code ──────────────────────────────────────────────────────────────────────
+code:not(pre code) {
+  background-color: var(--pf-surface) !important;
+  color: #fca5a5 !important;
+  border-radius: 4px;
+  padding: 0.12em 0.42em;
+  font-size: 0.85em;
+}
+
+// ── Social Icons ──────────────────────────────────────────────────────────────
+.social a,
+.contact-icons a {
+  color: var(--pf-muted) !important;
+
+  &:hover {
+    color: var(--pf-accent) !important;
+
+    i::before { color: var(--pf-accent) !important; }
+  }
+
+  i::before { color: var(--pf-muted) !important; transition: color 0.14s; }
+}
+
+// ── Footer ────────────────────────────────────────────────────────────────────
+footer,
+footer.sticky-bottom,
+footer.fixed-bottom {
+  background-color: var(--pf-footer-bg) !important;
+  border-top: 1px solid var(--pf-border) !important;
+
+  a, p, span { color: var(--pf-muted) !important; }
+  a:hover    { color: var(--pf-accent) !important; }
+}
+
+// ── Back to Top ───────────────────────────────────────────────────────────────
+#back-to-top {
+  background-color: var(--pf-surface) !important;
+  border: 1px solid var(--pf-border-solid) !important;
+  color: var(--pf-muted) !important;
+
+  &:hover {
+    border-color: var(--pf-accent) !important;
+    color: var(--pf-accent) !important;
+  }
+}
+
+// ── Responsive ────────────────────────────────────────────────────────────────
+@media (max-width: 576px) {
+  .pf-hero {
+    padding: 3.5rem 1.2rem 4rem;
+  }
+
+  .pf-content {
+    padding: 3rem 1.2rem 4rem;
+  }
+}
