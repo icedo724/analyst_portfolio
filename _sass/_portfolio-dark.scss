@@ -607,6 +607,192 @@ footer.fixed-bottom {
   }
 }
 
+// ── Hide dark mode toggle (single fixed dark theme) ──────────────────────────
+#light-toggle {
+  display: none !important;
+}
+
+// ── Numbered Approach (v2) ────────────────────────────────────────────────────
+.pf-approach-v2 {
+  margin: 0 0 2.8rem 0;
+}
+
+.pf-approach-item {
+  display: grid;
+  grid-template-columns: 3.2rem 1fr;
+  gap: 0 1.1rem;
+  align-items: start;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--pf-border);
+
+  &:first-child {
+    border-top: 1px solid var(--pf-border);
+  }
+}
+
+.pf-approach-num {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--pf-accent);
+  opacity: 0.18;
+  letter-spacing: -0.04em;
+  padding-top: 0.05rem;
+  user-select: none;
+}
+
+.pf-approach-body {
+  padding-top: 0.1rem;
+}
+
+.pf-approach-body__title {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--pf-text);
+  margin-bottom: 0.32rem;
+  letter-spacing: -0.01em;
+}
+
+.pf-approach-body__desc {
+  font-size: 0.87rem;
+  color: var(--pf-muted);
+  line-height: 1.78;
+  margin: 0;
+}
+
+// ── AI Era Callout ────────────────────────────────────────────────────────────
+.pf-ai-callout {
+  margin: 0 0 2.8rem 0;
+  padding: 1.4rem 1.6rem;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(129, 140, 248, 0.09) 0%,
+    rgba(129, 140, 248, 0.04) 100%
+  );
+  border: 1px solid var(--pf-accent-bdr);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--pf-accent) 0%, transparent 70%);
+  }
+}
+
+.pf-ai-callout__label {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pf-accent);
+  margin-bottom: 0.7rem;
+  opacity: 0.9;
+}
+
+.pf-ai-callout__text {
+  font-size: 0.88rem;
+  color: var(--pf-muted);
+  line-height: 1.82;
+  margin: 0;
+}
+
+.pf-ai-callout__strong {
+  color: var(--pf-text);
+  font-weight: 600;
+}
+
+// ── Featured Projects (main page) ─────────────────────────────────────────────
+.pf-feat-section {
+  margin-top: 0.5rem;
+}
+
+.pf-feat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem;
+  margin-top: 1.1rem;
+}
+
+.pf-feat-card {
+  padding: 1.15rem 1.3rem;
+  background-color: var(--pf-surface);
+  border: 1px solid var(--pf-border-solid);
+  border-radius: 10px;
+  transition: border-color 0.14s, transform 0.14s;
+
+  &:hover {
+    border-color: var(--pf-accent);
+    transform: translateY(-2px);
+  }
+}
+
+.pf-feat-card__cat {
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pf-accent);
+  opacity: 0.8;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.pf-feat-card__title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--pf-text) !important;
+  line-height: 1.4;
+  margin-bottom: 0.45rem;
+}
+
+.pf-feat-card__desc {
+  font-size: 0.8rem;
+  color: var(--pf-muted);
+  line-height: 1.65;
+  margin: 0 0 0.85rem 0;
+}
+
+.pf-feat-links {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.pf-feat-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: var(--pf-muted) !important;
+  border: 1px solid var(--pf-border-solid);
+  border-radius: 5px;
+  padding: 0.17rem 0.58rem;
+  transition: all 0.14s;
+  text-decoration: none !important;
+
+  i { color: var(--pf-accent) !important; font-size: 0.72rem; }
+
+  &:hover {
+    color: var(--pf-accent) !important;
+    border-color: var(--pf-accent);
+    background-color: var(--pf-accent-bg);
+  }
+}
+
+.pf-feat-more {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
 // ── Responsive ────────────────────────────────────────────────────────────────
 @media (max-width: 576px) {
   .pf-hero {
@@ -615,5 +801,14 @@ footer.fixed-bottom {
 
   .pf-content {
     padding: 3rem 1.2rem 4rem;
+  }
+
+  .pf-feat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pf-approach-item {
+    grid-template-columns: 2.6rem 1fr;
+    gap: 0 0.85rem;
   }
 }

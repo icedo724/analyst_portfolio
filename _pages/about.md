@@ -12,34 +12,95 @@ social: true
 
 <span class="pf-label">분석 방향</span>
 
-<ul class="pf-approach">
-  <li>
-    <span class="pf-approach__title">문제 정의가 출발점입니다</span>
-    <span class="pf-approach__desc">분석 도구를 적용하기 전에 "어떤 결정에 이 분석이 쓰이는가"를 먼저 정의합니다. 명확한 문제 없이 시작하는 분석은 인사이트가 아닌 노이즈로 끝납니다.</span>
-  </li>
-  <li>
-    <span class="pf-approach__title">도메인 맥락과 데이터를 함께 봅니다</span>
-    <span class="pf-approach__desc">분석 대상을 직접 경험한 맥락과 통계 도구를 함께 사용해, 숫자만으로는 설명되지 않는 현상의 원인을 짚어냅니다.</span>
-  </li>
-  <li>
-    <span class="pf-approach__title">인사이트가 아닌 의사결정으로 끝냅니다</span>
-    <span class="pf-approach__desc">분석의 목적은 보고서가 아니라 다음 행동입니다. 의사결정권자의 구체적인 행동으로 이어지는 결론을 지향합니다.</span>
-  </li>
-</ul>
+<div class="pf-approach-v2">
+  <div class="pf-approach-item">
+    <span class="pf-approach-num">01</span>
+    <div class="pf-approach-body">
+      <span class="pf-approach-body__title">문제 정의가 출발점입니다</span>
+      <p class="pf-approach-body__desc">분석 도구를 적용하기 전에 "어떤 결정에 이 분석이 쓰이는가"를 먼저 정의합니다. 명확한 문제 없이 시작하는 분석은 인사이트가 아닌 노이즈로 끝납니다.</p>
+    </div>
+  </div>
+  <div class="pf-approach-item">
+    <span class="pf-approach-num">02</span>
+    <div class="pf-approach-body">
+      <span class="pf-approach-body__title">도메인 맥락과 데이터를 함께 봅니다</span>
+      <p class="pf-approach-body__desc">분석 대상을 직접 경험한 맥락과 통계 도구를 함께 사용해, 숫자만으로는 설명되지 않는 현상의 원인을 짚어냅니다.</p>
+    </div>
+  </div>
+</div>
 
-<span class="pf-label">기술 스택</span>
+<div class="pf-ai-callout">
+  <span class="pf-ai-callout__label">AI 시대의 분석가</span>
+  <p class="pf-ai-callout__text">
+    AI는 코드를 쓰고 차트를 그릴 수 있지만, <span class="pf-ai-callout__strong">올바른 질문을 정의하거나 비즈니스 맥락을 읽지는 못합니다.</span>
+    제 강점은 도구 사용이 아닌 <span class="pf-ai-callout__strong">문제 구조화</span>에 있습니다 —
+    어떤 데이터를 수집해야 하는지, 어떤 분석이 의사결정에 실제로 쓰일 수 있는지 판단하는 능력입니다.
+    AI가 분석의 속도를 높인 지금, 차별점은 <span class="pf-ai-callout__strong">올바른 질문을 먼저 묻는 것</span>에 있습니다.
+  </p>
+</div>
 
-<div class="pf-tags">
-  <span class="pf-tag">Python</span>
-  <span class="pf-tag">SQL</span>
-  <span class="pf-tag">R</span>
-  <span class="pf-tag">통계 검정</span>
-  <span class="pf-tag">클러스터링</span>
-  <span class="pf-tag">생존 분석</span>
-  <span class="pf-tag">시계열 분석</span>
-  <span class="pf-tag">머신러닝</span>
-  <span class="pf-tag">Tableau</span>
-  <span class="pf-tag">Power BI</span>
-  <span class="pf-tag">Streamlit</span>
-  <span class="pf-tag">Scikit-learn</span>
+<div class="pf-feat-section">
+  <span class="pf-label">주요 프로젝트</span>
+
+  <div class="pf-feat-grid">
+    <div class="pf-feat-card">
+      <span class="pf-feat-card__cat">실무 · 경력</span>
+      <div class="pf-feat-card__title">거래처 데이터 보강 및 등급 재조정 방안 제시</div>
+      <p class="pf-feat-card__desc">직관에 의존하던 거래처 등급을 정량 기준으로 전환 — 영업 우선순위 재편의 데이터 근거 마련</p>
+      <div class="pf-feat-links">
+        <a href="https://github.com/icedo724/medi" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
+          <i class="fab fa-github" aria-hidden="true"></i>GitHub
+        </a>
+        <a href="https://www.notion.so/miniminimin/2e0fbcdaed2880f1a37fe87f58603c1a" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
+          <i class="fa-solid fa-file-lines" aria-hidden="true"></i>리포트
+        </a>
+      </div>
+    </div>
+
+    <div class="pf-feat-card">
+      <span class="pf-feat-card__cat">개인 · NLP</span>
+      <div class="pf-feat-card__title">JobSonar - 데이터직군 채용공고 수집 및 조회 서비스</div>
+      <p class="pf-feat-card__desc">데이터 직군 공고를 자동 수집·정형화하여 기술 트렌드와 조건을 한눈에 비교</p>
+      <div class="pf-feat-links">
+        <a href="https://github.com/icedo724/JobSonar" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
+          <i class="fab fa-github" aria-hidden="true"></i>GitHub
+        </a>
+        <a href="https://huggingface.co/spaces/mininiming/jobsonar" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
+          <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>대시보드
+        </a>
+      </div>
+    </div>
+
+    <div class="pf-feat-card">
+      <span class="pf-feat-card__cat">개인 · 시계열</span>
+      <div class="pf-feat-card__title">로스트아크 경제 시계열 분석</div>
+      <p class="pf-feat-card__desc">재화 가격 변동 원인을 이벤트 단위로 분해, 다음 충격 규모를 미리 가늠할 수 있는 판단 기준 제공</p>
+      <div class="pf-feat-links">
+        <a href="https://github.com/icedo724/LoaQuant" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
+          <i class="fab fa-github" aria-hidden="true"></i>GitHub
+        </a>
+        <a href="https://loaquant.streamlit.app/" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
+          <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>대시보드
+        </a>
+      </div>
+    </div>
+
+    <div class="pf-feat-card">
+      <span class="pf-feat-card__cat">개인 · 통계 검정</span>
+      <div class="pf-feat-card__title">메이플스토리 고레벨 유저 경험치 분석</div>
+      <p class="pf-feat-card__desc">96,000명 실데이터로 신규 지역 공개·썬데이 메이플의 경험치 영향을 정량 측정</p>
+      <div class="pf-feat-links">
+        <a href="https://github.com/icedo724/Maplestory_Analysis" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
+          <i class="fab fa-github" aria-hidden="true"></i>GitHub
+        </a>
+        <a href="https://maple-exp.streamlit.app/" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
+          <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>대시보드
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf-feat-more">
+    <a href="{{ '/projects/' | relative_url }}">전체 프로젝트 보기 →</a>
+  </div>
 </div>
