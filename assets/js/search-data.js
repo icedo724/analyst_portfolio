@@ -391,44 +391,44 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/analyst_portfolio/books/the_godfather/";
-            },},{id: "projects-거래처-등급-재조정",
-          title: '거래처 등급 재조정',
-          description: "직관 기반 거래처 등급을 정량 기준으로 전환 — 영업 우선순위 재편의 데이터 근거 마련",
+            },},{id: "projects-거래처-데이터-보강-및-등급-재조정-방안-제시",
+          title: '거래처 데이터 보강 및 등급 재조정 방안 제시',
+          description: "직관에 의존하던 거래처 등급을 정량 기준으로 전환 — 영업 우선순위 재편의 데이터 근거 마련",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/1_medi/";
-            },},{id: "projects-jobsonar-채용공고-기술스택-빈도-분석",
-          title: 'JobSonar — 채용공고 기술스택 빈도 분석',
-          description: "채용공고 자동 수집부터 직무·기술 스택 빈도 시각화까지 — 취업 시장 트렌드 한 페이지 집약",
+            },},{id: "projects-jobsonar-데이터직군-채용공고-수집-및-조회-서비스",
+          title: 'JobSonar - 데이터직군 채용공고 수집 및 조회 서비스',
+          description: "데이터직군 채용공고 자동 수집 → 직무·기술 스택 빈도 시각화 — 취업 시장 트렌드를 한 페이지에 집약",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/2_jobsonar/";
-            },},{id: "projects-시계열-회귀-기반-신규-출시-서비스-만족도-분석-붉은사막",
-          title: '시계열 회귀 기반 신규 출시 서비스 만족도 분석 (붉은사막)',
-          description: "출시 후 6주 만족도 추세를 AAA 출시작 2종과 정량 비교 — NLP 감성 분류 + 시계열 회귀로 패치 효과 입증",
+            },},{id: "projects-붉은사막-steam-리뷰-분석",
+          title: '붉은사막 Steam 리뷰 분석',
+          description: "출시 후 6주 만족도 추세를 외부 AAA 출시작 2종(Elden Ring·Cyberpunk 2077)과 정량 비교 — 핫픽스 시점 효과를 시계열 회귀로 입증",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/3_crimson_desert/";
-            },},{id: "projects-행동-패턴-기반-유저-세그먼테이션과-a-b-실험-설계-pubg",
-          title: '행동 패턴 기반 유저 세그먼테이션과 A/B 실험 설계 (PUBG)',
-          description: "6,759명을 4개 세그먼트로 분류 — 단일 KPI 실험의 한계를 실증하고 층화 무작위 배정 프레임워크 제안",
+            },},{id: "projects-배틀그라운드-유저-클러스터링",
+          title: '배틀그라운드 유저 클러스터링',
+          description: "유저 6,759명을 행동 패턴 4개 세그먼트로 분류 — 세그먼트별 독립 KPI 설계로 A/B 실험 정밀도를 높이는 프레임워크 구축",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/4_pubg_clustering/";
             },},{id: "projects-메이플스토리-유저-행동-클러스터링",
           title: '메이플스토리 유저 행동 클러스터링',
-          description: "활동·성장 패턴 군집화 후 Kaplan-Meier 생존 분석으로 세그먼트별 이탈 시점 차이를 통계 검증",
+          description: "활동·성장 패턴 기반 유저 군집화 → 클러스터별 이탈 시점과 쇼케이스 반응 차이를 생존 분석으로 검증",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/5_maple_clustering/";
             },},{id: "projects-메이플스토리-고레벨-유저-경험치-분석",
           title: '메이플스토리 고레벨 유저 경험치 분석',
-          description: "285Lv 이상 유저 96,000명 데이터로 신규 지역·이벤트의 성장 지표 영향을 통계 검정으로 측정",
+          description: "285레벨 이상 활성 유저 96,000명 실데이터로 신규 지역 공개·썬데이 메이플의 경험치 영향을 정량 측정",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/6_maple_exp/";
-            },},{id: "projects-인게임-경제-시계열-분석-이벤트-충격-분해-로스트아크",
-          title: '인게임 경제 시계열 분석: 이벤트 충격 분해 (로스트아크)',
-          description: "재화 가격 시계열을 이벤트 단위로 분해하여 충격 패턴을 정량화 — 구조적 변동 요인 식별",
+            },},{id: "projects-로스트아크-경제-시계열-분석",
+          title: '로스트아크 경제 시계열 분석',
+          description: "재화 가격 변동 원인을 이벤트 단위로 분해, 다음 충격 규모를 미리 가늠할 수 있는 판단 기준 제공",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/7_loaquant/";
-            },},{id: "projects-게임-패치-방향-예측-ml-모델-loracle-진행-중",
-          title: '게임 패치 방향 예측 ML 모델 — Loracle (진행 중)',
-          description: "API 수집 데이터로 분류·회귀 모델 v5 학습 — 패치 대상 분류 + 스탯 변화폭 회귀 파이프라인",
+            },},{id: "projects-loracle-리그오브레전드-패치-예측-모델",
+          title: 'Loracle - 리그오브레전드 패치 예측 모델',
+          description: "6패치 데이터로 분류·회귀 모델 v5 학습 완료 — 데이터 누적 시 패치 방향 예측 정확도 검증 예정",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/8_loracle/";
             },},{id: "teachings-data-science-fundamentals",
