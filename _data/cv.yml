@@ -10,8 +10,8 @@ cv:
 
   sections:
     경력:
-      - name: (주)메디케어소프트
-        position: 데이터 분석가 (인턴)
+      - name: (주)메디원
+        position: 데이터 분석가 (외주)
         start_date: "2024.07"
         end_date: "2024.10"
         location: 서울
@@ -34,8 +34,6 @@ cv:
         studyType: 학사
         start_date: "2019.03"
         end_date: "2023.08"
-        highlights:
-          - "이수: 자료구조, 알고리즘, 데이터베이스, 운영체제, 컴퓨터 네트워크"
 
     교육:
       - institution: 프로그래머스 데이터 분석 데브코스
@@ -72,8 +70,10 @@ cv:
     기술:
       - name: 언어
         keywords:
-          - "Python — pandas, scikit-learn, statsmodels, matplotlib (전 프로젝트 적용)"
-          - "SQL — PostgreSQL, MySQL (실무 데이터 추출·가공)"
-      - name: 시각화 / BI
+          - Python
+          - R
+          - SQL
+      - name: 도구
         keywords:
-          - "Matplotlib / Seaborn · Tableau · Power BI"
+          - Power BI
+          - Tableau
