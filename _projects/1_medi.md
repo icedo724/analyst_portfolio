@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 거래처 등급 재조정
-description: 직관 기반 거래처 등급을 정량 기준으로 전환 — 영업 우선순위 재편의 데이터 근거 마련
+title: "거래처 데이터 보강 및 등급 재조정 방안 제시"
+description: "직관에 의존하던 거래처 등급을 정량 기준으로 전환 — 영업 우선순위 재편의 데이터 근거 마련"
 img: assets/img/proj_medi.svg
 importance: 1
 category: 실무
