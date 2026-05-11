@@ -1,42 +1,41 @@
 <div class="col">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      {% if project.img %}
-        {%
-          include figure.liquid
-          loading="eager"
-          path=project.img
-          sizes = "250px"
-          alt="project thumbnail"
-          class="card-img-top"
-        %}
-      {% endif %}
-      <div class="card-body">
-        <h5 class="card-title">{{ project.title }}</h5>
-        <p class="card-text">{{ project.description }}</p>
-        {% if project.tags %}
-          <div class="project-tags">
-            {% for tag in project.tags %}
-              <span class="project-tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-        {% endif %}
-        <div class="row ml-1 mr-1 p-0">
-          {% if project.github %}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-              </div>
-              {% if project.github_stars %}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fa-solid fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
-                </span>
-              {% endif %}
-            </div>
-          {% endif %}
+  <div class="card h-100 pf-project-card">
+    <div class="card-body d-flex flex-column">
+
+      <!-- Title + WIP badge -->
+      <h5 class="card-title mb-2">
+        {{ project.title }}
+        {%- if project.wip -%}
+          <span class="pf-badge-wip">진행 중</span>
+        {%- endif -%}
+      </h5>
+
+      <!-- Description / Impact -->
+      <p class="card-text flex-grow-1">{{ project.description }}</p>
+
+      <!-- Tags -->
+      {%- if project.tags -%}
+        <div class="pf-tags mb-3">
+          {%- for tag in project.tags -%}
+            <span class="pf-tag">{{ tag }}</span>
+          {%- endfor -%}
         </div>
-      </div>
+      {%- endif -%}
+
+      <!-- Links (GitHub / 리포트 / 대시보드) -->
+      {%- if project.links -%}
+        <div class="project-links">
+          {%- for link in project.links -%}
+            <a href="{{ link.url }}"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="project-link-btn">
+              <i class="{{ link.icon }}" aria-hidden="true"></i>{{ link.text }}
+            </a>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
     </div>
-  </a>
+  </div>
 </div>

@@ -6,6 +6,7 @@ img: assets/img/proj_loracle.png
 importance: 8
 category: 개인
 tags: [Python, 머신러닝, Riot API]
+wip: true
 related_publications: false
 links:
   - text: GitHub

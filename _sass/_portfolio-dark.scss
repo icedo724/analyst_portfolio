@@ -189,6 +189,26 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+// ── Hero Profile Photo ────────────────────────────────────────────────────────
+.pf-hero__photo {
+  margin-bottom: 1.4rem;
+}
+
+.pf-hero__photo-img {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: 2px solid var(--pf-accent-bdr);
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: var(--pf-accent);
+  }
+}
+
 .pf-hero__eyebrow {
   font-size: 0.7rem;
   font-weight: 700;
@@ -444,6 +464,21 @@ h2.category {
   font-size: 0.7rem !important;
   font-weight: 500 !important;
   padding: 0.2rem 0.5rem !important;
+}
+
+// WIP badge
+.pf-badge-wip {
+  display: inline-block;
+  font-size: 0.67rem;
+  font-weight: 700;
+  padding: 0.18rem 0.55rem;
+  border-radius: 10px;
+  background-color: rgba(251, 191, 36, 0.12);
+  color: #FCD34D;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  vertical-align: middle;
+  margin-left: 6px;
+  letter-spacing: 0.02em;
 }
 
 // ── Project Detail Page ───────────────────────────────────────────────────────
