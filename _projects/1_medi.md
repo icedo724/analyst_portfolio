@@ -6,7 +6,7 @@ img: assets/img/proj_medi.svg
 importance: 1
 category: 실무
 tags: [Python, SQL, 통계 검정, 카이제곱]
-period: "2024.07 – 2024.10"
+period: "2024.08 – 2024.10"
 role: 데이터 분석가 (외주)
 related_publications: false
 links:
