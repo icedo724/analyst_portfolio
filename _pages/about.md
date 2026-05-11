@@ -58,20 +58,6 @@ social: true
     </div>
 
     <div class="pf-feat-card">
-      <span class="pf-feat-card__cat">개인 · NLP</span>
-      <div class="pf-feat-card__title">JobSonar - 데이터직군 채용공고 수집 및 조회 서비스</div>
-      <p class="pf-feat-card__desc">데이터 직군 공고를 자동 수집·정형화하여 기술 트렌드와 조건을 한눈에 비교</p>
-      <div class="pf-feat-links">
-        <a href="https://github.com/icedo724/JobSonar" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
-          <i class="fab fa-github" aria-hidden="true"></i>GitHub
-        </a>
-        <a href="https://huggingface.co/spaces/mininiming/jobsonar" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
-          <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>대시보드
-        </a>
-      </div>
-    </div>
-
-    <div class="pf-feat-card">
       <span class="pf-feat-card__cat">개인 · 시계열</span>
       <div class="pf-feat-card__title">로스트아크 경제 시계열 분석</div>
       <p class="pf-feat-card__desc">재화 가격 변동 원인을 이벤트 단위로 분해, 다음 충격 규모를 미리 가늠할 수 있는 판단 기준 제공</p>
@@ -80,20 +66,6 @@ social: true
           <i class="fab fa-github" aria-hidden="true"></i>GitHub
         </a>
         <a href="https://loaquant.streamlit.app/" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
-          <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>대시보드
-        </a>
-      </div>
-    </div>
-
-    <div class="pf-feat-card">
-      <span class="pf-feat-card__cat">개인 · 통계 검정</span>
-      <div class="pf-feat-card__title">메이플스토리 고레벨 유저 경험치 분석</div>
-      <p class="pf-feat-card__desc">96,000명 실데이터로 신규 지역 공개·썬데이 메이플의 경험치 영향을 정량 측정</p>
-      <div class="pf-feat-links">
-        <a href="https://github.com/icedo724/Maplestory_Analysis" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
-          <i class="fab fa-github" aria-hidden="true"></i>GitHub
-        </a>
-        <a href="https://maple-exp.streamlit.app/" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
           <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>대시보드
         </a>
       </div>
