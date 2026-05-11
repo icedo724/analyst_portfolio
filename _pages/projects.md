@@ -11,11 +11,16 @@ horizontal: false
 
 <div class="projects">
 
-<!-- Filter tabs -->
-<div class="project-filter-tabs mb-4">
-  <button class="filter-tab active" data-filter="all">전체</button>
-  <button class="filter-tab" data-filter="실무">실무</button>
-  <button class="filter-tab" data-filter="개인">개인</button>
+<!-- Header row: filter tabs + PDF button -->
+<div class="pf-projects-topbar">
+  <div class="project-filter-tabs">
+    <button class="filter-tab active" data-filter="all">전체</button>
+    <button class="filter-tab" data-filter="실무">실무</button>
+    <button class="filter-tab" data-filter="개인">개인</button>
+  </div>
+  <button class="pf-btn pf-btn--ghost pf-print-btn" onclick="window.print()" title="PDF로 저장">
+    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> PDF 저장
+  </button>
 </div>
 
 {% if site.enable_project_categories and page.display_categories %}
@@ -70,6 +75,27 @@ horizontal: false
           a.style.display = a.id === filter ? '' : 'none';
         });
       }
+    });
+  });
+
+  // Print: always show all categories regardless of active filter
+  window.addEventListener('beforeprint', function () {
+    document.querySelectorAll('[data-category]').forEach(function (g) {
+      g.setAttribute('data-print-hidden', g.style.display === 'none' ? '1' : '0');
+      g.style.display = '';
+    });
+    document.querySelectorAll('a[id]').forEach(function (a) {
+      a.setAttribute('data-print-hidden', a.style.display === 'none' ? '1' : '0');
+      a.style.display = '';
+    });
+  });
+
+  window.addEventListener('afterprint', function () {
+    document.querySelectorAll('[data-category]').forEach(function (g) {
+      if (g.getAttribute('data-print-hidden') === '1') g.style.display = 'none';
+    });
+    document.querySelectorAll('a[id]').forEach(function (a) {
+      if (a.getAttribute('data-print-hidden') === '1') a.style.display = 'none';
     });
   });
 })();

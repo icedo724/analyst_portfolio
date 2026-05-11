@@ -612,6 +612,156 @@ footer.fixed-bottom {
   display: none !important;
 }
 
+// ── Projects topbar (filter tabs + PDF button row) ────────────────────────────
+.pf-projects-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+// ── PDF Save button ───────────────────────────────────────────────────────────
+.pf-print-btn {
+  font-size: 0.8rem !important;
+  padding: 0.35rem 0.9rem !important;
+  gap: 0.35rem !important;
+
+  i {
+    color: #f87171 !important;
+    font-size: 0.82rem;
+  }
+
+  &:hover i {
+    color: #fca5a5 !important;
+  }
+}
+
+// ── Print / PDF export ────────────────────────────────────────────────────────
+@media print {
+  // Page setup
+  @page {
+    size: A4;
+    margin: 14mm 12mm;
+  }
+
+  // Reset dark theme to white-on-dark for print
+  :root,
+  html[data-theme="light"],
+  html[data-theme="dark"] {
+    --pf-bg:      #ffffff;
+    --pf-surface: #f8f8f8;
+    --pf-text:    #111111;
+    --pf-muted:   #444444;
+    --pf-accent:  #4f46e5;
+    --pf-border-solid: #dddddd;
+    --pf-border:  rgba(0,0,0,0.12);
+    --pf-accent-bg:  rgba(79,70,229,0.07);
+    --pf-accent-bdr: rgba(79,70,229,0.25);
+  }
+
+  body {
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 9.5pt !important;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif !important;
+  }
+
+  // Hide chrome elements
+  .navbar,
+  footer,
+  footer.sticky-bottom,
+  footer.fixed-bottom,
+  #back-to-top,
+  .pf-scroll-indicator,
+  .pf-projects-topbar,
+  #light-toggle,
+  #search-toggle {
+    display: none !important;
+  }
+
+  // Remove link colors but keep text readable
+  a {
+    color: #4f46e5 !important;
+    text-decoration: none !important;
+  }
+
+  // Cards
+  .card {
+    background-color: #f9f9f9 !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+    transform: none !important;
+  }
+
+  .card-title {
+    color: #111 !important;
+    font-size: 9.5pt !important;
+  }
+
+  .card-text {
+    color: #444 !important;
+    font-size: 8.5pt !important;
+  }
+
+  // Tags
+  .pf-tag {
+    background-color: #f0f0ff !important;
+    color: #4f46e5 !important;
+    border-color: #c7d2fe !important;
+    font-size: 7pt !important;
+  }
+
+  // Project link buttons
+  .project-links {
+    margin-top: 0.3rem !important;
+  }
+
+  .project-link-btn {
+    color: #555 !important;
+    border-color: #ccc !important;
+    font-size: 7.5pt !important;
+
+    i { color: #4f46e5 !important; }
+  }
+
+  // WIP badge
+  .pf-badge-wip {
+    background-color: #fff8e1 !important;
+    color: #b45309 !important;
+    border-color: #fde68a !important;
+  }
+
+  // Category headers
+  h2.category {
+    color: #333 !important;
+    border-color: #ccc !important;
+    font-size: 10pt !important;
+    margin-top: 1rem !important;
+  }
+
+  // 2-col grid for print
+  .row-cols-md-2 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.6rem !important;
+  }
+
+  .row-cols-md-2 > .col {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  // Page title
+  .page-header h1,
+  h1.post-title {
+    color: #111 !important;
+    font-size: 16pt !important;
+  }
+}
+
 // ── Numbered Approach (v2) ────────────────────────────────────────────────────
 .pf-approach-v2 {
   margin: 0 0 2.8rem 0;
