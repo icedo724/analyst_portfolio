@@ -391,6 +391,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/analyst_portfolio/books/the_godfather/";
+            },},{id: "projects-리그오브레전드-상위-플레이어-메타-대시보드",
+          title: '리그오브레전드 상위 플레이어 메타 대시보드',
+          description: "마스터 이상 실데이터 기반 챔피언 픽률·승률 사분면 분류로 메타 통계 서비스 구현",
+          section: "Projects",handler: () => {
+              window.location.href = "/analyst_portfolio/projects/10_lol_dashboard/";
+            },},{id: "projects-월드-오브-워크래프트-한밤-경제-분석",
+          title: '월드 오브 워크래프트 한밤 경제 분석',
+          description: "신규 확장팩 &#39;한밤&#39;에 따른 경매장 경제 변동 분석 및 로스트아크 분석 프레임워크의 이식 가능성 검증",
+          section: "Projects",handler: () => {
+              window.location.href = "/analyst_portfolio/projects/11_wow_auction/";
             },},{id: "projects-거래처-데이터-보강-및-등급-재조정-방안-제시",
           title: '거래처 데이터 보강 및 등급 재조정 방안 제시',
           description: "직관에 의존하던 거래처 등급을 정량 기준으로 전환 — 영업 우선순위 재편의 데이터 근거 마련",
@@ -431,6 +441,11 @@ ninja.data = [{
           description: "6패치 데이터로 분류·회귀 모델 v5 학습 완료 — 데이터 누적 시 패치 방향 예측 정확도 검증 예정",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/8_loracle/";
+            },},{id: "projects-loabal-로스트아크-커뮤니티-감정분석",
+          title: 'LOABAL - 로스트아크 커뮤니티 감정분석',
+          description: "패치 전후 유저 감성 점수를 시계열로 시각화하여 유저 반응을 정량 측정",
+          section: "Projects",handler: () => {
+              window.location.href = "/analyst_portfolio/projects/9_loabal/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
