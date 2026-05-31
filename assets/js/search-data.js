@@ -438,7 +438,7 @@ ninja.data = [{
               window.location.href = "/analyst_portfolio/projects/7_loaquant/";
             },},{id: "projects-loracle-리그오브레전드-패치-예측-모델",
           title: 'Loracle - 리그오브레전드 패치 예측 모델',
-          description: "6패치 데이터로 분류·회귀 모델 v5 학습 완료 — 데이터 누적 시 패치 방향 예측 정확도 검증 예정",
+          description: "8패치 데이터로 분류·회귀 모델 v6 학습 완료 — 데이터 누적 시 패치 방향 예측 정확도 검증 예정",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/8_loracle/";
             },},{id: "projects-loabal-로스트아크-커뮤니티-감정분석",
