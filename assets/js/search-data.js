@@ -391,16 +391,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/analyst_portfolio/books/the_godfather/";
-            },},{id: "projects-리그오브레전드-상위-플레이어-메타-대시보드",
-          title: '리그오브레전드 상위 플레이어 메타 대시보드',
-          description: "마스터 이상 실데이터 기반 챔피언 픽률·승률 사분면 분류로 메타 통계 서비스 구현",
-          section: "Projects",handler: () => {
-              window.location.href = "/analyst_portfolio/projects/10_lol_dashboard/";
-            },},{id: "projects-월드-오브-워크래프트-한밤-경제-분석",
-          title: '월드 오브 워크래프트 한밤 경제 분석',
-          description: "신규 확장팩 &#39;한밤&#39;에 따른 경매장 경제 변동 분석 및 로스트아크 분석 프레임워크의 이식 가능성 검증",
-          section: "Projects",handler: () => {
-              window.location.href = "/analyst_portfolio/projects/11_wow_auction/";
             },},{id: "projects-kbo-베이지안-타율-진출확률-추정",
           title: 'KBO 베이지안 타율·진출확률 추정',
           description: "시즌 초 타율의 평균회귀를 베이지안 shrinkage로 보정 — 매일 자동 수집·갱신되는 추론 파이프라인",
@@ -426,11 +416,6 @@ ninja.data = [{
           description: "유저 6,759명을 행동 패턴 4개 세그먼트로 분류 — 세그먼트별 독립 KPI 설계로 A/B 실험 정밀도를 높이는 프레임워크 구축",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/4_pubg_clustering/";
-            },},{id: "projects-메이플스토리-유저-행동-클러스터링",
-          title: '메이플스토리 유저 행동 클러스터링',
-          description: "활동·성장 패턴 기반 유저 군집화 → 클러스터별 이탈 시점과 쇼케이스 반응 차이를 생존 분석으로 검증",
-          section: "Projects",handler: () => {
-              window.location.href = "/analyst_portfolio/projects/5_maple_clustering/";
             },},{id: "projects-메이플스토리-고레벨-유저-경험치-분석",
           title: '메이플스토리 고레벨 유저 경험치 분석',
           description: "285레벨 이상 활성 유저 96,000명 실데이터로 신규 지역 공개·썬데이 메이플의 경험치 영향을 정량 측정",
@@ -441,16 +426,6 @@ ninja.data = [{
           description: "재화 가격 변동 원인을 이벤트 단위로 분해, 다음 충격 규모를 미리 가늠할 수 있는 판단 기준 제공",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/7_loaquant/";
-            },},{id: "projects-loracle-리그오브레전드-패치-예측-모델",
-          title: 'Loracle - 리그오브레전드 패치 예측 모델',
-          description: "9패치 데이터로 분류·회귀 모델 v7 학습 완료 — 데이터 누적 시 패치 방향 예측 정확도 검증 예정",
-          section: "Projects",handler: () => {
-              window.location.href = "/analyst_portfolio/projects/8_loracle/";
-            },},{id: "projects-loabal-로스트아크-커뮤니티-감정분석",
-          title: 'LOABAL - 로스트아크 커뮤니티 감정분석',
-          description: "패치 전후 유저 감성 점수를 시계열로 시각화하여 유저 반응을 정량 측정",
-          section: "Projects",handler: () => {
-              window.location.href = "/analyst_portfolio/projects/9_loabal/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
