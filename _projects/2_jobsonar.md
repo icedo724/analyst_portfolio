@@ -11,12 +11,9 @@ links:
   - text: GitHub
     url: "https://github.com/icedo724/JobSonar"
     icon: "fab fa-github"
-  - text: 대시보드
-    url: "https://huggingface.co/spaces/mininiming/jobsonar"
-    icon: "fa-solid fa-chart-bar"
 ---
 
-데이터 직군 채용 시장의 트렌드를 한 화면에 집약한 대시보드.
+데이터 직군 채용 공고 모음
 
 **문제**
 취업 준비자가 직무별 요구 스킬·근무 조건을 종합적으로 파악할 단일 채널이 부재.
