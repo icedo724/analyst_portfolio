@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "붉은사막 Steam 리뷰 분석"
-description: "출시 후 6주 만족도 추세를 외부 AAA 출시작 2종(Elden Ring·Cyberpunk 2077)과 정량 비교 — 핫픽스 시점 효과를 시계열 회귀로 입증"
+description: "출시 후 6주 만족도 추세를 외부 AAA 출시작 2종(Elden Ring·Cyberpunk 2077)과 정량 비교 — 핫픽스 전후 회복 구조를 단절적 시계열 회귀로 분해"
 img: assets/img/proj_crimson.png
 importance: 2
 category: 개인
@@ -12,7 +12,7 @@ links:
     url: "https://github.com/icedo724/crimson_desert_review"
     icon: "fab fa-github"
   - text: 리포트
-    url: "https://www.notion.so/miniminimin/358fbcdaed28804e92f6c73ecc6fa899"
+    url: "https://miniminimin.notion.site/358fbcdaed28804e92f6c73ecc6fa899"
     icon: "fa-solid fa-file-lines"
 ---
 
@@ -50,7 +50,7 @@ Steam appreviews API로 전수 수집 후 패치 윈도우별로 집계, 95% 신
 
 1.00.03 핫픽스 시점을 개입점으로 설정한 단절적 시계열 회귀. R² = 0.91(KR) / 0.83(EN).
 
-핵심 발견: 핫픽스 즉각 점프는 유의하지 않았고, **회복 추세가 안정 구간에 진입하는 시점**이 출시 후 4~5일임을 통계적으로 입증.
+핵심 발견: 핫픽스 시점의 즉각 점프는 통계적으로 유의하지 않았다. 만족도 회복은 출시 직후의 자연 회복 추세가 주도했으며, **회복 추세가 안정 구간에 진입하는 시점**이 출시 후 4~5일로 추정된다.
 
 ### 3단계 — 속성별 분해
 
@@ -69,7 +69,7 @@ Steam appreviews API로 전수 수집 후 패치 윈도우별로 집계, 95% 신
 
 ## 핵심 결과
 
-- 회복 속도는 Elden Ring의 **1.6배** — 핫픽스 대응 효과 정량 입증
+- 회복 속도는 Elden Ring의 **1.6배** — 단, 낙폭이 더 깊은 상태에서 출발한 회복이므로 절대 비교가 아닌 추세 패턴 비교로 한정
 - 리뷰 좋아요 가중 시 EN 만족도 추가 -4.7%p → 잠재 구매자 노출 인상에 직접 위협
 - 0~5h 단기 체험 긍정률 49.6% vs 20~50h 91.5% — 초반 진입 경험 개선 필요
 

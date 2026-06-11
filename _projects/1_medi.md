@@ -6,7 +6,7 @@ img: assets/img/proj_medi.svg
 importance: 1
 category: 실무
 tags: [Python, SQL, 통계 검정, 카이제곱]
-period: "2024.08 – 2024.10"
+period: "2025.08 – 2025.10"
 role: 데이터 분석가 (외주)
 related_publications: false
 links:
@@ -14,7 +14,7 @@ links:
     url: "https://github.com/icedo724/medi"
     icon: "fab fa-github"
   - text: 리포트
-    url: "https://www.notion.so/miniminimin/2e0fbcdaed2880f1a37fe87f58603c1a"
+    url: "https://miniminimin.notion.site/2e0fbcdaed2880f1a37fe87f58603c1a"
     icon: "fa-solid fa-file-lines"
 ---
 

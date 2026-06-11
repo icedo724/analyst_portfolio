@@ -12,7 +12,7 @@ links:
     url: "https://github.com/icedo724/pubg_clustering"
     icon: "fab fa-github"
   - text: 리포트
-    url: "https://www.notion.so/miniminimin/PUBG-344fbcdaed2880908668fb1db24185c1"
+    url: "https://miniminimin.notion.site/PUBG-344fbcdaed2880908668fb1db24185c1"
     icon: "fa-solid fa-file-lines"
 ---
 

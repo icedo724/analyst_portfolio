@@ -5,14 +5,14 @@ description: "재화 가격 변동 원인을 이벤트 단위로 분해, 다음 
 img: assets/img/proj_loaquant.png
 importance: 6
 category: 개인
-tags: [Python, 시계열, 인과추론, API]
+tags: [Python, 시계열, 개입 분석, API]
 related_publications: false
 links:
   - text: GitHub
     url: "https://github.com/icedo724/LoaQuant"
     icon: "fab fa-github"
   - text: 리포트
-    url: "https://www.notion.so/miniminimin/318fbcdaed2880cd8de8dd88406d3564"
+    url: "https://miniminimin.notion.site/318fbcdaed2880cd8de8dd88406d3564"
     icon: "fa-solid fa-file-lines"
   - text: 대시보드
     url: "https://loaquant.streamlit.app/"
@@ -56,7 +56,7 @@ Prophet 모형으로 "패치 없었을 경우" 예측값을 생성, 실제값과
 
 ### 예측 모델 (ARIMAX + Prophet)
 
-- **ARIMAX**: 거래량이 파괴석 결정 가격에 통계적으로 유의한 영향(p=0.016), 융화 재료는 무의미(p=0.91) → 재화별 가격 결정 구조 차이 입증
+- **ARIMAX**: 거래량과 파괴석 결정 가격 간 통계적으로 유의한 연관(p=0.016), 융화 재료는 비유의(p=0.91) → 재화별로 가격이 공급량에 반응하는 정도가 다름을 시사 (가격·거래량은 동시 결정되므로 인과 단정은 하지 않음)
 - **Prophet MAPE**: 아비도스 1.29% / 파괴석 결정 5.19% — 실전 예측 대시보드 탑재
 
 ## 핵심 결과

@@ -51,7 +51,7 @@ social: true
         <a href="https://github.com/icedo724/medi" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
           <i class="fab fa-github" aria-hidden="true"></i>GitHub
         </a>
-        <a href="https://www.notion.so/miniminimin/2e0fbcdaed2880f1a37fe87f58603c1a" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
+        <a href="https://miniminimin.notion.site/2e0fbcdaed2880f1a37fe87f58603c1a" target="_blank" rel="noopener noreferrer" class="pf-feat-link">
           <i class="fa-solid fa-file-lines" aria-hidden="true"></i>리포트
         </a>
       </div>

@@ -12,8 +12,8 @@ cv:
     경력:
       - name: (주)메디원
         position: 데이터 분석가 (외주)
-        start_date: "2024.08"
-        end_date: "2024.10"
+        start_date: "2025.08"
+        end_date: "2025.10"
         location: 서울
         highlights:
           - 거래처 활동·매출·결제 데이터 통합 및 정제 파이프라인 구축
@@ -58,10 +58,6 @@ cv:
       - name: 정보처리산업기사
         issuer: 한국산업인력공단
         date: "2021.08"
-
-      - name: 2종보통운전면허
-        issuer: 경찰청(운전면허시험관리단)
-        date: "2020.10"
 
       - name: 네트워크관리사 2급
         issuer: 한국정보통신자격협회
