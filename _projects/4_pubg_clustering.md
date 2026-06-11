@@ -30,7 +30,7 @@ KDA 등 단일 지표로 A/B 실험을 설계하면 **전략적으로 킬을 포
 
 ## 분석 방법
 
-### 1단계 — PCA로 다중공선성 제거
+### 1단계 — PCA로 상관 피처의 중복 반영 제거
 
 {% include figure.liquid loading="eager" path="assets/img/chart_pubg_pca.png" class="img-fluid rounded" caption="PCA 축소 후 군집 분포 (PC1 × PC2)" %}
 
