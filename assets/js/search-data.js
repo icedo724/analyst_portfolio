@@ -418,7 +418,7 @@ ninja.data = [{
               window.location.href = "/analyst_portfolio/projects/4_pubg_clustering/";
             },},{id: "projects-메이플스토리-고레벨-유저-경험치-분석",
           title: '메이플스토리 고레벨 유저 경험치 분석',
-          description: "285레벨 이상 활성 유저 96,000명 실데이터로 신규 지역 공개·썬데이 메이플의 경험치 영향을 정량 측정",
+          description: "285레벨 이상 활성 유저 약 97,000명 실데이터로 신규 지역 공개·썬데이 메이플의 경험치 영향을 정량 측정",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/6_maple_exp/";
             },},{id: "projects-로스트아크-경제-시계열-분석",
