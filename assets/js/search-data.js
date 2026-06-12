@@ -396,6 +396,11 @@ ninja.data = [{
           description: "시즌 초 타율의 평균회귀를 베이지안 shrinkage로 보정 — 매일 자동 수집·갱신되는 추론 파이프라인",
           section: "Projects",handler: () => {
               window.location.href = "/analyst_portfolio/projects/12_kbo_bayes/";
+            },},{id: "projects-메이플-유저-활동-분석-sql-에디션",
+          title: '메이플 유저 활동 분석 — SQL 에디션',
+          description: "직접 수집한 1,200만 행 유저 활동 패널을 MySQL로 정규화 — 코호트 리텐션·휴면 복귀·이탈을 순수 SQL로 분석, 인덱스 튜닝 실측 12.05s→1.61s",
+          section: "Projects",handler: () => {
+              window.location.href = "/analyst_portfolio/projects/13_maple_sql/";
             },},{id: "projects-거래처-데이터-보강-및-등급-재조정-방안-제시",
           title: '거래처 데이터 보강 및 등급 재조정 방안 제시',
           description: "직관에 의존하던 거래처 등급을 정량 기준으로 전환 — 영업 우선순위 재편의 데이터 근거 마련",
