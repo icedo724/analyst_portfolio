@@ -71,5 +71,6 @@ cv:
           - SQL
       - name: 도구
         keywords:
+          - MySQL
           - Power BI
           - Tableau
