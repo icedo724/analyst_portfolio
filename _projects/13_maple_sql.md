@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "메이플 유저 활동 분석 — SQL 에디션"
+title: "메이플 유저 활동 분석 — SQL 활용"
 description: "직접 수집한 1,200만 행 유저 활동 패널을 MySQL로 정규화 — 코호트 리텐션·휴면 복귀·이탈을 순수 SQL로 분석, 인덱스 튜닝 실측 12.05s→1.61s"
 img: assets/img/proj_maple_exp.svg
 importance: 4
