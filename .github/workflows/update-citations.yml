@@ -1,10 +1,8 @@
 name: Update Google Scholar Citations
 
 on:
-  schedule:
-    - cron: "0 0 * * 1" # Monday
-    - cron: "0 0 * * 3" # Wednesday
-    - cron: "0 0 * * 5" # Friday
+  # 포트폴리오 창구를 icedo724.github.io 로 단일화하면서 이 사이트는 운영을 종료한다.
+  # 갱신되지 않는 사이트의 인용 정보를 주 3회 자동 갱신할 이유가 없다.
   workflow_dispatch:
 
 jobs:
